@@ -1,25 +1,70 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons';
+import HoverableLink from './HoverableLink';
 
 const Nav = () => {
     return (
-        <div className='nav'>
-            <div className="nav-content-left">
+        <div style={styles.nav}>
+            <div style={styles.contentLeft}>
                 <ul>
-                    <li><Link className='link' to='/'>Home</Link></li>
-                    <li><Link className='link' to='/projects'>Projects</Link></li>
-                    <li><Link className='link' to='/contact'>Contact</Link></li>
+                    <li style={styles.li}>
+                        <HoverableLink normalStyle={styles.normalStyle} hoverStyle={styles.hoverStyle} to='/'>Home</HoverableLink>
+                    </li>
+                    <li style={styles.li}>
+                        <HoverableLink normalStyle={styles.normalStyle} hoverStyle={styles.hoverStyle} to='/projects'>Projects</HoverableLink>
+                    </li>
+                    <li style={styles.li}>
+                        <HoverableLink normalStyle={styles.normalStyle} hoverStyle={styles.hoverStyle} to='/contact'>Contact</HoverableLink>
+                    </li>
                 </ul>
             </div>
-
-            <div className="nav-content-right">
-                <SocialIcon className='social-icon' url='https://www.linkedin.com/in/dominic-campese-560bb31b0/'/>
-                <SocialIcon className='social-icon' url='https://github.com/DomCampese'/>
+            <div styles={styles.contentRight}>
+                <SocialIcon style={styles.socialIcon} url='https://www.linkedin.com/in/dominic-campese-560bb31b0/'/>
+                <SocialIcon style={styles.socialIcon} url='https://github.com/DomCampese'/>
             </div>
-            
         </div>
     )
 }
 
 export default Nav
+
+const styles = {
+    nav: {
+        fontFamily: 'roboto',
+        fontFace: 'sans-serif',
+        position: 'fixed',
+        top: 0,
+        width: '100%',
+        background: 'white', 
+        opacity: '.95',
+        display: 'flex',
+        alignItems: 'center',
+        boxShadow: 'rgba(0, 0, 0, 0.1) 0px 1px 2px 0px'
+    },
+    contentLeft: {
+        flex: 1
+    },
+    li: {
+        display: 'inline',
+        paddingLeft: 10,
+        padding: 10,
+        textDecoration: 'none',
+        height: 100,
+        fontSize: 18
+    },
+    contentRight: {
+        marginTop: 1,
+        marginRight: 10
+    },
+    socialIcon: {
+        margin: 5
+    },
+    linkNormal: {
+        textDecoration: 'none',
+        color: '#000'
+    },
+    linkHover: {
+        textDecoration: 'underline',
+        color: '#000'
+    }
+}
