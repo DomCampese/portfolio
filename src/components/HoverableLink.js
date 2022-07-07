@@ -1,20 +1,20 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 
-const HoverableLink = ({ children, hoverStyle, normalStyle, to }) => {
+const HoverableLink = ({ children, style, hover, to }) => {
 
-    const [hover, setHover] = useState(false);
+  const [hovering, setHovering] = useState(false);
 
-    return (
-        <Link 
-            style={hover ? hoverStyle : normalStyle} 
-            to={to}
-            onMouseEnter={() => setHover(true)}
-            onMouseLeave={() => setHover(false)}
-        >
-            {children}
-        </Link>
-    )
+  return (
+    <Link 
+      style={hovering ? {...style, ...hover} : style} 
+      to={to}
+      onMouseEnter={() => setHovering(true)}
+      onMouseLeave={() => setHovering(false)}
+    >
+      {children}
+    </Link>
+  )
 }
 
 export default HoverableLink

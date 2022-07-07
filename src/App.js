@@ -8,7 +8,7 @@ import Projects from './components/Projects.js';
 
 const App = () => {
   return (
-    <div className='App'>
+    <div className='app'>
       <Nav />
       <Routes>
         <Route path='/' element={<Home />} />  
