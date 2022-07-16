@@ -6,6 +6,9 @@ import './home-styles.css'
 const Home = () => {
   return (
     <div className='content'>
+      <div className='greeting-wrapper'>
+        <p className='greeting'>Hello.</p>
+      </div>
       <div className='portrait-wrapper'>
         <img className='portrait' src={portrait} alt='Dom Campese'></img>
       </div>

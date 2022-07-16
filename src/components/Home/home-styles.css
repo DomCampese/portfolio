@@ -1,3 +1,13 @@
+
+.greeting-wrapper {
+  text-align: center;
+  padding: 20px;
+}
+
+.content .greeting {
+  font-size: 65px;
+}
+
 .contact-button-wrapper {
   display: flex;
   justify-content: center;
@@ -25,7 +35,6 @@
 
 .portrait-wrapper {
   width: 100%;
-  margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,11 +43,13 @@
 .portrait {
   border-radius: 16px;
   height: 300px;
-  width: 400px;
-  box-shadow:  5px 5px 10px #bebebe,
-             -5px -5px 10px #ffffff;
+  width: 350px;
+  box-shadow: -1px 1px 10px 0px rgba(0,0,0,0.4);
+  -webkit-box-shadow: -1px 1px 10px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: -1px 1px 10px 0px rgba(0,0,0,0.4);
 }
 
 .description {
   margin: 0 20% 0 20%;
+  text-align: justify;
 }
