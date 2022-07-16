@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons';
+import './nav-styles.css'
 
 const Nav = () => {
   return (

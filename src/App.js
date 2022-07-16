@@ -1,10 +1,10 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import './App.css';
-import Nav from './components/Nav.js';
-import Home from './components/Home.js';
-import Contact from './components/Contact.js';
-import Projects from './components/Projects.js';
+import './app.css';
+import Nav from './components/Nav/Nav.js';
+import Home from './components/Home/Home.js';
+import Contact from './components/Contact/Contact.js';
+import Projects from './components/Projects/Projects.js';
 
 const App = () => {
   return (

@@ -1,7 +1,8 @@
 import React from 'react';
-import MessageBox from './MessageBox';
+import MessageBox from '../../MessageBox/MessageBox';
 import { useState } from 'react';
 import { send } from 'emailjs-com';
+import './contact-styles.css'
 
 const Contact = () => {
   const [toSend, setToSend] = useState({

@@ -1,0 +1,44 @@
+.nav-content-left {
+  flex: 1;
+}
+
+.nav-content-right {
+  margin-top: 1px;
+  margin-right: 10px;
+}
+
+.nav-content-right .social-icon {
+  margin: 5px 5px 5px 5px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  height: 75px;
+  width: 100%; 
+  background: white; 
+  opacity: .95;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.nav ul {
+  padding-left: 10px; 
+}
+
+.nav li {
+  display: inline; 
+}
+
+.nav li .link {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  height: 100px;
+  font-size: 18px;
+}
+
+.nav li .link:hover {
+  text-decoration: underline;
+}

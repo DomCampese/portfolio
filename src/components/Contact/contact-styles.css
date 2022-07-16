@@ -1,0 +1,39 @@
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form textarea {
+  font-size: 20px;
+  height: 200px;
+  margin-bottom: 10px;
+  resize: none;
+}
+
+.contact-form input {
+  font-size: 20px;
+  margin-bottom: 10px;
+  border: 0.5px solid black;
+}
+
+.contact-form button {
+  width: 20%;
+  height: 40px;
+}
+
+.success-box {
+  opacity: .8;
+  width: 100%;
+  margin: 3vh auto;
+  color: #270;
+  background-color: #DFF2BF;
+  padding-left: 10px;
+}
+
+.error-box {
+  opacity: .8;
+  margin: 3vh auto;
+  width: 100%;
+  color: #D8000C;
+  background-color: #FFBABA;
+  padding-left: 10px;
+}
