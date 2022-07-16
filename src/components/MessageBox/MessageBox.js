@@ -1,4 +1,5 @@
 import React from 'react'
+import './message-box-styles.css'
 
 const MessageBox = ({ message, success }) => {
   return (
