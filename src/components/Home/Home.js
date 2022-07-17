@@ -1,9 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import portrait from '../../images/portrait.jpg'
+import { useScrollSection } from 'react-scroll-section'
 import './home-styles.css'
 
 const Home = () => {
+
+  const contactSection = useScrollSection('contact');
+
   return (
     <div className='content'>
       <div className="intro">
@@ -21,7 +24,7 @@ const Home = () => {
           </p>
         </div>
         <div className="contact-button-wrapper">
-          <Link className='contact-button' to='/contact'>get in touch</Link>
+          <li onClick={contactSection.onClick} selected={contactSection.selected} className='contact-button'>get in touch</li>
         </div>
       </div>
     </div>

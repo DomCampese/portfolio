@@ -1,16 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { SocialIcon } from 'react-social-icons';
+import { useScrollSection } from 'react-scroll-section';
 import './nav-styles.css'
 
 const Nav = () => {
+  const homeSection = useScrollSection('home');
+  const projectsSection = useScrollSection('projects');
+  const contactSection = useScrollSection('contact');
+
   return (
     <div className='nav'>
       <div className="nav-content-left">
         <ul>
-          <li><Link className='link' to='/'>Home</Link></li>
-          <li><Link className='link' to='/projects'>Projects</Link></li>
-          <li><Link className='link' to='/contact'>Contact</Link></li>
+          <li onClick={homeSection.onClick} selected={homeSection.selected}>Home</li>
+          <li onClick={projectsSection.onClick} selected={projectsSection.selected}>Projects</li>
+          <li onClick={contactSection.onClick} selected={contactSection.selected}>Contact</li>
         </ul>
       </div>
       <div className="nav-content-right">

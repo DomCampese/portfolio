@@ -29,9 +29,6 @@
 
 .nav li {
   display: inline; 
-}
-
-.nav li .link {
   padding: 10px;
   text-decoration: none;
   color: black;
@@ -39,6 +36,6 @@
   font-size: 18px;
 }
 
-.nav li .link:hover {
+.nav li:hover {
   text-decoration: underline;
 }
