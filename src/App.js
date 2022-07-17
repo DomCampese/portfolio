@@ -9,7 +9,7 @@ import { ScrollingProvider, Section } from 'react-scroll-section';
 const App = () => {
   return (
     <div className='App'>
-      <ScrollingProvider>
+      <ScrollingProvider offset={-100}>
         <Nav/>
         <Section id='home'><Home/></Section>
         <Section id='projects'><Projects/></Section>
