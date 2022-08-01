@@ -30,4 +30,5 @@
 
 .nav li:hover {
   text-decoration: underline;
+  text-decoration-color: #0276eb;
 }

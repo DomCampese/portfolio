@@ -12,7 +12,6 @@
 }
   
 .contact-button {
-  
   text-decoration: none;
   padding: 15px 45px;
   text-align: center;
@@ -31,7 +30,7 @@
 }
 
 .contact-button:active {
-  
+  background: #0f86fc
 }
 
 .portrait-wrapper {

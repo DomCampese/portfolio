@@ -2,6 +2,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+li {
+  cursor: pointer;
+}
+
 .content {
   margin-top: 100px;
   margin-left: 5%;

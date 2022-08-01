@@ -21,7 +21,7 @@ const About = () => {
           <p>
             A Senior at the University of Pittsburgh studying Computer Science
             with a minor in Spanish. I'm a passionate full-stack Software Engineer with experience
-            in React, ASP .NET, and various other languages, frameworks, and tools. I live and work in the greator Pittsburgh area. Feel free to check out my work 
+            in React, ASP .NET, and various other languages, frameworks, and tools. I live and work in the Pittsburgh, PA area. Feel free to check out my work 
             and to reach out with any questions or opportunities!
           </p>
         </div>
