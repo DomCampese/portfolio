@@ -1,7 +1,6 @@
-.success-box .error-box {
-  opacity: .8;
-  color: #270;
-  background-color: #DFF2BF;
+.success-box, .error-box {
+  border-radius: 10px;
+  height: 50px;
 }
 
 .success-box {
@@ -14,6 +13,17 @@
   background-color: #FFBABA;
 }
 
-.success-box .error-box p {
-  padding-left: 10px
+.success-box, .error-box p {
+  padding: 0 10px 0 10px;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dismiss-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;  
 }

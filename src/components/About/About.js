@@ -8,7 +8,7 @@ const About = () => {
   const contactSection = useScrollSection('contact');
 
   return (
-    <div className='content'>
+    <div className='content' style={{ marginTop: 100 }}>
       <div className='intro'>
         <div className='portrait-wrapper'>
           <div>
@@ -19,7 +19,7 @@ const About = () => {
           <h2 className='greeting'>Hello! I'm</h2>
           <h2 className='name'><span className='first-name'>Dom</span> Campese</h2>
           <p>
-            A Senior at the University of Pittsburgh studying Computer Science
+            I'm a Senior at the University of Pittsburgh studying Computer Science
             with a minor in Spanish. I'm a passionate full-stack Software Engineer with experience
             in React, ASP .NET, and various other languages, frameworks, and tools. I live and work in the Pittsburgh, PA area. Feel free to check out my work 
             and to reach out with any questions or opportunities!
