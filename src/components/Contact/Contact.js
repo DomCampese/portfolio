@@ -1,7 +1,7 @@
 import React from 'react';
 import MessageBox from '../MessageBox/MessageBox';
 import { useState } from 'react';
-// import { send } from 'emailjs-com';
+import { send } from 'emailjs-com';
 import ReCAPTCHA from "react-google-recaptcha";
 import './styles.css'
 
@@ -25,27 +25,24 @@ const Contact = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     
-    /* REMOVE and uncomment below */
-    setUserMessage({message: "Development mode", success: true});
-    
-    // send(
-    //   'service_o7dy42h',
-    //   'template_qqjtrml',
-    //   toSend,
-    //   'user_V9malAR9KI5x2nSxzMMzE'
-    // )
-    //   .then((response) => {
-    //     setUserMessage({
-    //       message: 'Your message was sent successfully. I will reply to you shortly!',
-    //       success: true
-    //     });
-    //   })
-    //   .catch((error) => {
-    //     setUserMessage({
-    //       message: 'Something went wrong. Please try again.',
-    //       success: false
-    //     });
-    //   })
+    send(
+      'service_o7dy42h',
+      'template_qqjtrml',
+      toSend,
+      'user_V9malAR9KI5x2nSxzMMzE'
+    )
+      .then((response) => {
+        setUserMessage({
+          message: 'Your message was sent successfully. I will reply to you shortly!',
+          success: true
+        });
+      })
+      .catch((error) => {
+        setUserMessage({
+          message: 'Something went wrong. Please try again.',
+          success: false
+        });
+      })
   };
 
   const handleChange = (e) => {

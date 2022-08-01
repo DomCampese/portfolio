@@ -57,6 +57,7 @@
 .content .greeting {
   font-size: 26px;
   text-align: center;
+  margin-top: 40px;
 }
 
 .content .name {
