@@ -2,7 +2,8 @@ import React from 'react';
 import MessageBox from '../MessageBox/MessageBox';
 import { useState } from 'react';
 import { send } from 'emailjs-com';
-import './contact-styles.css'
+import ReCAPTCHA from "react-google-recaptcha";
+import './styles.css'
 
 const Contact = () => {
   const [toSend, setToSend] = useState({
@@ -16,12 +17,14 @@ const Contact = () => {
     message: '',
     success: false
   });
+  
+  const [recaptchaComplete, setRecaptchaComplete] = useState(false);
 
   /* Sends an email using emailJS */
   const onSubmit = (e) => {
     e.preventDefault();
     send(
-      'service_zh6sr48',
+      'service_o7dy42h',
       'template_qqjtrml',
       toSend,
       'user_V9malAR9KI5x2nSxzMMzE'
@@ -45,7 +48,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="content">
+    <div className='content'>
         <h1>Send me a message!</h1>
         <form className='contact-form' onSubmit={onSubmit}>
             <label>Name</label>
@@ -72,7 +75,15 @@ const Contact = () => {
               value={toSend.reply_to}
               onChange={handleChange}
             />
-            <button type='submit'>Submit</button>
+            {(recaptchaComplete)
+              ? <button type='submit'>Submit</button>
+              : <ReCAPTCHA
+                sitekey={'6LfKyjshAAAAAEEVmIhaIrt-HgufZlAAG5gkf7p8'}
+                onChange={() => {
+                  setRecaptchaComplete(true);
+                }}
+              />
+            }
         </form>
         <MessageBox message={userMessage.message} success={userMessage.success} />
     </div>

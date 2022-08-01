@@ -12,23 +12,26 @@
 }
   
 .contact-button {
-  background-image: linear-gradient(to right, #1A2980 0%, #26D0CE  51%, #1A2980  100%);
+  
   text-decoration: none;
   padding: 15px 45px;
   text-align: center;
   text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: white;            
+  background: #0080ff;
+  color: #fff;
   box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
+  border-radius: 50px;
   font-weight: bold; 
   list-style-type: none;
 }
 
 .contact-button:hover {
   background-position: right center;
-  color: #fff;
+  background: #0276eb;
+}
+
+.contact-button:active {
+  
 }
 
 .portrait-wrapper {
@@ -50,6 +53,20 @@
 .content .description {
   margin: 0 20% 0 20%;
   text-align: justify;
+}
+
+.content .greeting {
+  font-size: 26px;
+  text-align: center;
+}
+
+.content .name {
+  text-align: center;
+  font-size: 36px;
+}
+
+.content .first-name {
+  color: #0080ff;
 }
 
 .intro-links-wrapper {

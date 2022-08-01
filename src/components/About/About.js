@@ -1,9 +1,9 @@
 import React from 'react';
 import portrait from '../../images/portrait.jpg'
 import { useScrollSection } from 'react-scroll-section'
-import './home-styles.css'
+import './styles.css'
 
-const Home = () => {
+const About = () => {
 
   const contactSection = useScrollSection('contact');
 
@@ -12,15 +12,17 @@ const Home = () => {
       <div className='intro'>
         <div className='portrait-wrapper'>
           <div>
-            <img className='portrait' src={portrait} alt='Dom Campese'></img>
+            <img className='portrait' src={portrait} alt='A photo of Dom Campese'></img>
           </div>
         </div>
         <div className='description'>
+          <h2 className='greeting'>Hello! I'm</h2>
+          <h2 className='name'><span className='first-name'>Dom</span> Campese</h2>
           <p>
-            My name's Dom Campese. I am a Senior at the University of Pittsburgh studying Computer Science
-            with a minor in Spanish. I'm a passionate full-stack Software Engineer with industry experience
-            in React and .NET and am comfortable with multiple other languages, frameworks, and technologies. I live and work in the greator Pittsburgh area. Feel free to check out my work 
-            on <a href='https://www.linkedin.com/in/dominic-campese-560bb31b0/'>Github</a> or <a href='https://www.linkedin.com/in/dominic-campese-560bb31b0/'>LinkedIn</a> and please reach out with any questions or opportunities!
+            A Senior at the University of Pittsburgh studying Computer Science
+            with a minor in Spanish. I'm a passionate full-stack Software Engineer with experience
+            in React, ASP .NET, and various other languages, frameworks, and tools. I live and work in the greator Pittsburgh area. Feel free to check out my work 
+            and to reach out with any questions or opportunities!
           </p>
         </div>
         <div className='intro-links-wrapper'>
@@ -39,4 +41,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default About

@@ -2,15 +2,6 @@
   flex: 1;
 }
 
-.nav-content-right {
-  margin-top: 1px;
-  margin-right: 10px;
-}
-
-.nav-content-right .social-icon {
-  margin: 5px 5px 5px 5px;
-}
-
 .nav {
   position: fixed;
   top: 0;
@@ -21,6 +12,7 @@
   display: flex;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  left: 0;
 }
 
 .nav ul {

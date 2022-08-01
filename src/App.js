@@ -1,7 +1,7 @@
 import React from 'react';
-import './app.css';
+import './App.css';
 import Nav from './components/Nav/Nav.js';
-import Home from './components/Home/Home.js';
+import About from './components/About/About.js';
 import Contact from './components/Contact/Contact.js';
 import Projects from './components/Projects/Projects.js';
 import { ScrollingProvider, Section } from 'react-scroll-section';
@@ -11,7 +11,7 @@ const App = () => {
     <div className='App'>
       <ScrollingProvider offset={-100}>
         <Nav/>
-        <Section id='home'><Home/></Section>
+        <Section id='about'><About/></Section>
         <Section id='projects'><Projects/></Section>
         <Section id='contact'><Contact/></Section>
       </ScrollingProvider>

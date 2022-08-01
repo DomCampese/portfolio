@@ -1,0 +1,19 @@
+.success-box .error-box {
+  opacity: .8;
+  color: #270;
+  background-color: #DFF2BF;
+}
+
+.success-box {
+  color: #270;
+  background-color: #DFF2BF;
+}
+
+.error-box {
+  color: #D8000C;
+  background-color: #FFBABA;
+}
+
+.success-box .error-box p {
+  padding-left: 10px
+}
