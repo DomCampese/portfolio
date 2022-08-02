@@ -25,24 +25,29 @@ const Contact = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     
-    send(
-      'service_o7dy42h',
-      'template_qqjtrml',
-      toSend,
-      'user_V9malAR9KI5x2nSxzMMzE'
-    )
-      .then((response) => {
-        setUserMessage({
-          message: 'Your message was sent successfully. I will reply to you shortly!',
-          success: true
-        });
-      })
-      .catch((error) => {
-        setUserMessage({
-          message: 'Something went wrong. Please try again.',
-          success: false
-        });
-      })
+    setUserMessage({
+      message: 'Currently in development mode.',
+      success: true
+    });
+    
+    // send(
+    //   'service_o7dy42h',
+    //   'template_qqjtrml',
+    //   toSend,
+    //   'user_V9malAR9KI5x2nSxzMMzE'
+    // )
+    //   .then((response) => {
+    //     setUserMessage({
+    //       message: 'Your message was sent successfully. I will reply to you shortly!',
+    //       success: true
+    //     });
+    //   })
+    //   .catch((error) => {
+    //     setUserMessage({
+    //       message: 'Something went wrong. Please try again.',
+    //       success: false
+    //     });
+    //   })
   };
 
   const handleChange = (e) => {

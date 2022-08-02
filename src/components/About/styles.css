@@ -16,7 +16,7 @@
   padding: 15px 45px;
   text-align: center;
   text-transform: uppercase;
-  background: #0080ff;
+  background: #00A3FF;
   color: #fff;
   box-shadow: 0 0 20px #eee;
   border-radius: 50px;
@@ -50,7 +50,6 @@
 }
 
 .content .description {
-  margin: 0 20% 0 20%;
   text-align: justify;
 }
 
@@ -66,7 +65,7 @@
 }
 
 .content .first-name {
-  color: #0080ff;
+  color: #00A3FF;
 }
 
 .intro-links-wrapper {
