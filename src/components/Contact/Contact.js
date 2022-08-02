@@ -37,6 +37,9 @@ const Contact = () => {
     //   'user_V9malAR9KI5x2nSxzMMzE'
     // )
     //   .then((response) => {
+    //     if (response.status !== 200) {
+    //       throw new Error();
+    //     }
     //     setUserMessage({
     //       message: 'Your message was sent successfully. I will reply to you shortly!',
     //       success: true
@@ -44,7 +47,7 @@ const Contact = () => {
     //   })
     //   .catch((error) => {
     //     setUserMessage({
-    //       message: 'Something went wrong. Please try again.',
+    //       message: 'Unable to send message. Please try again later.',
     //       success: false
     //     });
     //   })
