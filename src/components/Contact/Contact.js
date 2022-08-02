@@ -3,7 +3,7 @@ import MessageBox from '../MessageBox/MessageBox';
 import { useState } from 'react';
 import { send } from 'emailjs-com';
 import ReCAPTCHA from "react-google-recaptcha";
-import './styles.css'
+import './contact-styles.css'
 
 const Contact = () => {
   const [toSend, setToSend] = useState({

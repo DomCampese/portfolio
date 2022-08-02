@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { MdCancel } from 'react-icons/md'
-import './styles.css'
+import './message-box-styles.css'
 
 const MessageBox = ({ message, success, onDismiss }) => {
   return (

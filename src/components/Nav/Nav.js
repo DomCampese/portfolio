@@ -1,6 +1,6 @@
 import React from 'react';
 import { useScrollSection } from 'react-scroll-section';
-import './styles.css'
+import './nav-styles.css'
 
 const Nav = () => {
   const aboutSection = useScrollSection('about');

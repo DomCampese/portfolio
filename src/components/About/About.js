@@ -1,7 +1,7 @@
 import React from 'react';
 import portrait from '../../images/portrait.jpg'
 import { useScrollSection } from 'react-scroll-section'
-import './styles.css'
+import './about-styles.css'
 
 const About = () => {
 
