@@ -1,6 +1,11 @@
 .success-box, .error-box {
   border-radius: 10px;
   height: 50px;
+  padding: 0 10px 0 10px;
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .success-box {
@@ -11,14 +16,6 @@
 .error-box {
   color: #D8000C;
   background-color: #FFBABA;
-}
-
-.success-box, .error-box p {
-  padding: 0 10px 0 10px;
-  display: flex;
-  margin-top: 10px;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .dismiss-button {
