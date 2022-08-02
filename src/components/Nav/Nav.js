@@ -11,7 +11,7 @@ const Nav = () => {
     <div className='nav'>
       <div className="nav-content-left">
         <ul>
-          <li onClick={aboutSection.onClick} selected={aboutSection.selected}>Home</li>
+          <li onClick={aboutSection.onClick} selected={aboutSection.selected}>About</li>
           <li onClick={projectsSection.onClick} selected={projectsSection.selected}>Projects</li>
           <li onClick={contactSection.onClick} selected={contactSection.selected}>Contact</li>
         </ul>
