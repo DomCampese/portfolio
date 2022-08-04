@@ -47,9 +47,3 @@
 .contact-form button:active {
   background: #32b1fa
 }
-
-@media screen and (max-width: 750px) {
-  .form-wrapper {
-    width: 100%;
-  }
-}

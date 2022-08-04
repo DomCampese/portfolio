@@ -75,9 +75,3 @@
 .intro-link {
   margin-left: 12px;
 }
-
-@media screen and (max-width: 750px) {
-  .content .description {
-    margin: 0;
-  }
-}

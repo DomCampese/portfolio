@@ -12,7 +12,7 @@ h1 {
 
 .content {
   margin: 0 20% 0 20%;
-  min-height: calc(100vh - 75px);
+  min-height: calc(100vh - 200px);
 }
 
 .content p {
@@ -31,4 +31,11 @@ h1 {
   height: 1px;
   border-top: solid 1px #adadad;
   margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 750px) {
+  .content {
+    margin: 10px;
+  }
 }
