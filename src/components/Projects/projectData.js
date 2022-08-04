@@ -19,14 +19,14 @@ export const projectData = [
   },
   {
     image: testImage,
-    title: 'A Distinct Project',
-    description: 'A distinguished description that shows just how unique this project is and how it is not the same as the prior project. For testing purposes, this is good to know.',
+    title: 'Another Project that is not the same as the previous',
+    description: 'A distinguished description that shows just how unique this project is and how it is not the same as the prior project. For testing purposes, this is good to know. If for whatever reason I drone on and on ',
     demoUrl: 'https://www.youtube.com/',
     githubUrl: 'https://www.youtube.com/'
   },
   {
     image: testImage,
-    title: 'A Distinct Project',
+    title: 'One last one for good measure',
     description: 'A distinguished description that shows just how unique this project is and how it is not the same as the prior project. For testing purposes, this is good to know.',
     demoUrl: 'https://www.youtube.com/',
     githubUrl: 'https://www.youtube.com/'
