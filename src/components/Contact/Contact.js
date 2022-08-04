@@ -58,7 +58,7 @@ const Contact = () => {
   }
 
   return (
-    <div className='content' style={{ display: 'flex', justifyContent: 'center' }}>
+    <div className='content' style={{ display: 'flex', justifyContent: 'center', marginBottom: 30 }}>
       <div className='form-wrapper'>
         <h1 className='title' style={{ marginBottom: '5px' }}>Contact</h1>
         <div className='underline'></div>
