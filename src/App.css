@@ -11,7 +11,7 @@ h1 {
 }
 
 .content {
-  margin: 0 20% 0 20%;
+  margin: 0 20% 75px 20%;
   min-height: calc(100vh - 80px);
 }
 
