@@ -60,7 +60,8 @@ const Contact = () => {
   return (
     <div className='content' style={{ display: 'flex', justifyContent: 'center' }}>
       <div className='form-wrapper'>
-        <h1 className='title'>Contact</h1>
+        <h1 className='title' style={{ marginBottom: '5px' }}>Contact</h1>
+        <div className='underline'></div>
         <form className='contact-form' onSubmit={onSubmit}>
           <label>Name</label>
           <input
