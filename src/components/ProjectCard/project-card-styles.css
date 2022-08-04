@@ -1,10 +1,10 @@
 .card {
-  min-height: 380px;
-  max-width: 480px;
+  height: 425px;
+  max-width: 500px;
   border-radius: 15px;
   box-shadow:  5px 5px 16px #e0e0e0,
              -5px -5px 16px #ffffff;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .image {
@@ -19,8 +19,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(100% - 212px);
-  margin: 10px;
+  height: calc(100% - 192px);
+  overflow: scroll;
 }
 
 .card-text-wrapper h2 {
@@ -46,7 +46,7 @@
 }
 
 .card-text-wrapper a:active {
-  color: #0276eb;
+  color: #1d8eff;
   text-decoration: underline;
 }
 

@@ -16,5 +16,19 @@ export const projectData = [
     description: 'A distinguished description that shows just how unique this project is and how it is not the same as the prior project. For testing purposes, this is good to know.',
     demoUrl: 'https://www.youtube.com/',
     githubUrl: 'https://www.youtube.com/'
-  }
+  },
+  {
+    image: testImage,
+    title: 'A Distinct Project',
+    description: 'A distinguished description that shows just how unique this project is and how it is not the same as the prior project. For testing purposes, this is good to know.',
+    demoUrl: 'https://www.youtube.com/',
+    githubUrl: 'https://www.youtube.com/'
+  },
+  {
+    image: testImage,
+    title: 'A Distinct Project',
+    description: 'A distinguished description that shows just how unique this project is and how it is not the same as the prior project. For testing purposes, this is good to know.',
+    demoUrl: 'https://www.youtube.com/',
+    githubUrl: 'https://www.youtube.com/'
+  },
 ]
