@@ -1,34 +1,34 @@
 /* Each object is rendered as one project card in the projects component */
 
-import testImage from '../../images/test.jpg'
+import journalerImage from '../../images/journaler.png'
+import jumpyballImage from '../../images/jumpyball.png'
 
 export const projectData = [
   {
-    image: testImage,
-    title: 'Tree Project',
-    description: 'Digital design project where I created a lifelike painting of a tree. If you look closely, I did not make it at all and it is actually just a real photo of a tree.',
-    demoUrl: 'https://www.google.com/',
-    githubUrl: 'https://www.google.com/'
+    image: journalerImage,
+    title: 'Journaler',
+    description: 'A mental health tool that lets a user create and edit journal entries to track their mood, save memories about their day, or vent about their troubles. It is built with a React (JS) frontend and a Django (Python) backend REST API using JWT Authentication.',
+    demoUrl: 'https://journaler.netlify.app/',
+    githubUrl: 'https://github.com/DomCampese/Journaler'
   },
   {
-    image: testImage,
-    title: 'A Distinct Project',
-    description: 'A distinguished description that shows just how unique this project is and how it is not the same as the prior project. For testing purposes, this is good to know.',
-    demoUrl: 'https://www.youtube.com/',
-    githubUrl: 'https://www.youtube.com/'
+    image: jumpyballImage,
+    title: 'Jumpy Ball',
+    description: 'A clone of the viral Flappy Bird game built using the p5.js creative coding library. The game features score and high score tracking, a randomly generated world, and supports mobile and desktop gameplay.',
+    demoUrl: 'https://domcampese.github.io/Jumpy-Ball/',
+    githubUrl: 'https://github.com/DomCampese/Jumpy-Ball'
   },
   {
-    image: testImage,
-    title: 'Another Project that is not the same as the previous',
-    description: 'A distinguished description that shows just how unique this project is and how it is not the same as the prior project. For testing purposes, this is good to know. If for whatever reason I drone on and on ',
-    demoUrl: 'https://www.youtube.com/',
-    githubUrl: 'https://www.youtube.com/'
+    image: undefined,
+    title: 'Chatting Site',
+    description: 'A website that allows a user to create, join, and participate in real-time chatrooms. Leverages HTML, CSS, and vanilla JavaScript on the frontend and the Flask (Python) backend framework on the server side.',
+    githubUrl: 'https://google.com'
   },
   {
-    image: testImage,
-    title: 'One last one for good measure',
-    description: 'A distinguished description that shows just how unique this project is and how it is not the same as the prior project. For testing purposes, this is good to know.',
-    demoUrl: 'https://www.youtube.com/',
-    githubUrl: 'https://www.youtube.com/'
-  },
+    image: undefined,
+    title: 'To be decided...',
+    description: 'Description',
+    demoUrl: '',
+    githubUrl: ''
+  }
 ]

@@ -10,8 +10,8 @@ const ProjectCard = ({ image, title, description, demoUrl, githubUrl }) => {
           <h2>{title}</h2>
           <p>{description}</p>
           <div style={{ display: 'flex' }}>
-            <a href={demoUrl}>Demo</a>
-            <a href={githubUrl}>Code</a>
+            {demoUrl && <a href={demoUrl}>Demo</a>}
+            {githubUrl && <a href={githubUrl}>Code</a>}
           </div>
         </div>  
       </div>

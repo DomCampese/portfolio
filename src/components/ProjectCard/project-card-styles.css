@@ -1,14 +1,14 @@
 .card {
-  height: 425px;
-  max-width: 500px;
+  width: 700px;
   border-radius: 15px;
   box-shadow:  5px 5px 16px #e0e0e0,
              -5px -5px 16px #ffffff;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .image {
-  height: 192px;
+  height: 50vw;
+  max-height: 400px;
   width: 100%;
   display: block;
   border-top-left-radius: 15px;
@@ -19,7 +19,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: calc(100% - 192px);
+  height: calc(100% - 300px);
   overflow: scroll;
 }
 
