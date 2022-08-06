@@ -2,6 +2,7 @@
 
 import journalerImage from '../../images/journaler.png'
 import jumpyballImage from '../../images/jumpyball.png'
+import chatioImage from '../../images/chatio.png'
 
 export const projectData = [
   {
@@ -19,16 +20,9 @@ export const projectData = [
     githubUrl: 'https://github.com/DomCampese/Jumpy-Ball'
   },
   {
-    image: undefined,
-    title: 'Chatting Site',
+    image: chatioImage,
+    title: 'Chat.io',
     description: 'A website that allows a user to create, join, and participate in real-time chatrooms. Leverages HTML, CSS, and vanilla JavaScript on the frontend and the Flask (Python) backend framework on the server side.',
-    githubUrl: 'https://google.com'
-  },
-  {
-    image: undefined,
-    title: 'To be decided...',
-    description: 'Description',
-    demoUrl: '',
-    githubUrl: ''
+    githubUrl: 'https://github.com/DomCampese/Chat.io'
   }
 ]

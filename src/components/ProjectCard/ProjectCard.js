@@ -11,7 +11,7 @@ const ProjectCard = ({ image, title, description, demoUrl, githubUrl }) => {
           <p>{description}</p>
           <div style={{ display: 'flex' }}>
             {demoUrl && <a href={demoUrl}>Demo</a>}
-            {githubUrl && <a href={githubUrl}>Code</a>}
+            {githubUrl && <a href={githubUrl} style={demoUrl && { marginLeft: 12 }}>Code</a>}
           </div>
         </div>  
       </div>
