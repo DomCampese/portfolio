@@ -8,7 +8,7 @@ const About = () => {
   const contactSection = useScrollSection('contact');
 
   return (
-    <div className='content' style={{ marginTop: 100 }}>
+    <div className='content' style={{ minHeight: '100vh', display: 'flex', alignItems: 'center' }}>
       <div className='intro'>
         <div className='portrait-wrapper'>
           <div>
