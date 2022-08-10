@@ -3,6 +3,7 @@
 import journalerImage from '../../images/journaler.png'
 import jumpyballImage from '../../images/jumpyball.png'
 import chatioImage from '../../images/chatio.png'
+import battleshipImage from '../../images/battleship.png'
 
 export const projectData = [
   {
@@ -20,9 +21,15 @@ export const projectData = [
     githubUrl: 'https://github.com/DomCampese/Jumpy-Ball'
   },
   {
+    image: battleshipImage,
+    title: 'Battleship',
+    description: 'A web version of the classic game of Battleship. A dynamic pass and play game created with HTML, CSS, and JavaScript.',
+    githubUrl: 'https://github.com/DomCampese/battleship'
+  },
+  {
     image: chatioImage,
     title: 'Chat.io',
-    description: 'A website that allows a user to create, join, and participate in real-time chatrooms. Leverages HTML, CSS, and vanilla JavaScript on the frontend and the Flask (Python) backend framework on the server side.',
+    description: 'A website that allows a user to create, join, and participate in real-time chatrooms. Leverages HTML, CSS, and JavaScript on the frontend and the Flask (Python) backend framework on the server side.',
     githubUrl: 'https://github.com/DomCampese/Chat.io'
   }
 ]
