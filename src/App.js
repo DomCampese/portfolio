@@ -11,9 +11,11 @@ const App = () => {
     <div className='App'>
       <ScrollingProvider offset={-100}>
         <Nav/>
-        <Section id='about'><About/></Section>
-        <Section id='projects'><Projects/></Section>
-        <Section id='contact'><Contact/></Section>
+        <div className='app'>
+          <Section id='about'><About/></Section>
+          <Section id='projects'><Projects/></Section>
+          <Section id='contact'><Contact/></Section>
+        </div>
       </ScrollingProvider>
     </div>
   );

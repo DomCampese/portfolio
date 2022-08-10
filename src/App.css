@@ -10,9 +10,13 @@ h1 {
   font-size: 36px;
 }
 
+.app {
+  margin-top: 75px;
+}
+
 .content {
-  margin: 0 20% 75px 20%;
-  min-height: 100vh;
+  margin: 0 20% 0px 20%;
+  min-height: calc(100vh - 75px);
 }
 
 .content p {

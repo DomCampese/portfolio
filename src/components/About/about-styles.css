@@ -76,3 +76,9 @@
 .intro-link {
   margin-left: 12px;
 }
+
+@media screen and (max-width: 750px) {
+  .about-wrapper {
+    margin-top: 80px;;
+  }
+}
