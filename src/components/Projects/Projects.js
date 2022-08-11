@@ -9,9 +9,9 @@ const Projects = () => {
       <h1 style={{ marginBottom: '5px' }}>Projects</h1>
       <div className='underline'></div>
       <div className='projects-wrapper'>
-        {projectData.map((currentProject) => {
+        {projectData.map((currentProject, index) => {
           return (
-            <ProjectCard {...currentProject}/>
+            <ProjectCard key={index} {...currentProject}/>
           )
         })}
       </div>

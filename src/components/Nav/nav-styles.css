@@ -50,36 +50,77 @@
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  
   background: black;
   border-radius: 3px;
-  
   z-index: 1;
-  
   transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  transition: transform 0.2s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.2s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
 }
 
-.ex-mark span {
+.ex-mark span:nth-child(1) {
   opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  transform: rotate(45deg) translate(0, -2px);
 }
 
-/*
- * But let's hide the middle one.
- */
-.ex-mark span:nth-last-child(3) {
+.ex-mark span:nth-last-child(2) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
-.ex-mark span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
+.ex-mark span:nth-last-child(1) {
+  transform: rotate(-45deg) translate(0, -2px);
+}
+
+.mobile-nav-side-menu {
+  background-color: #00A3FF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+}
+
+.mobile-nav-side-menu li {
+  font-size: 26px;
+  width: 100%;
+  list-style: none;
+}
+
+.slide-in {
+  animation: slide-in 0.5s forwards;
+  -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+  animation: slide-out 0.5s forwards;
+  -webkit-animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-in {
+  100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+  100% { -webkit-transform: translateX(0%); }
+}
+  
+@keyframes slide-out {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+  0% { -webkit-transform: translateX(0%); }
+  100% { -webkit-transform: translateX(-100%); }
+}
+
+.mobile-nav-side-menu li:active {
+  background-color: #0095ec;
 }
