@@ -1,3 +1,5 @@
+/* Returns a boolean of whether or not this is a mobile device. Works when screen resizes. */
+
 import { useState, useEffect } from 'react';
 
 function getWindowDimensions() {
@@ -8,7 +10,7 @@ function getWindowDimensions() {
   };
 }
 
-export default function useWindowDimensions() {
+export default function useMobile() {
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
   useEffect(() => {
@@ -20,5 +22,5 @@ export default function useWindowDimensions() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  return windowDimensions;
+  return (windowDimensions.width <= 750);
 }

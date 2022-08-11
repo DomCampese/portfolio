@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { useScrollSection } from 'react-scroll-section';
 import './nav-styles.css'
-import useWindowDimensions from '../../hooks/useWindowDimensions'
+import useMobile from '../../hooks/useMobile'
 
 const Nav = () => {
 
@@ -9,13 +9,11 @@ const Nav = () => {
   const projectsSection = useScrollSection('projects');
   const contactSection = useScrollSection('contact');
 
-  const width = useWindowDimensions().width;
+  const isMobile = useMobile();
 
   const mobileSideMenuRef = useRef(null);
 
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
-
-  const isMobile = (width <= 750);
 
   const toggleMobileSideMenu = () => {
     if (mobileNavOpen) {

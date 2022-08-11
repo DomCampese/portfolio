@@ -82,13 +82,19 @@
   width: 80%;
   display: flex;
   align-items: center;
+  display: flex;
+  justify-content: center;
 
   transform: translateX(-100%);
   -webkit-transform: translateX(-100%);
 }
 
+.mobile-nav-side-menu ul {
+  padding: 0;
+}
+
 .mobile-nav-side-menu li {
-  font-size: 26px;
+  font-size: 36px;
   width: 100%;
   list-style: none;
 }

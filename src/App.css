@@ -16,7 +16,7 @@ h1 {
 
 .content {
   margin: 0 20% 0px 20%;
-  min-height: calc(100vh - 75px);
+  min-height: calc(100vh);
 }
 
 .content p {
@@ -38,6 +38,11 @@ h1 {
 
 @media screen and (max-width: 750px) {
   .content {
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  h1 {
+    text-align: center;
   }
 }
