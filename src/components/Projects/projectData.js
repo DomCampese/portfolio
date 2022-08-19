@@ -1,5 +1,4 @@
 /* Each object is rendered as one project card in the projects component */
-
 import journalerImage from '../../images/journaler.png'
 import jumpyballImage from '../../images/jumpyball.png'
 import chatioImage from '../../images/chatio.png'

@@ -4,7 +4,7 @@ import './project-card-styles.css'
 const ProjectCard = ({ image, title, description, demoUrl, githubUrl }) => {
   return (
     <div className='card'>
-      <img className='image' src={image}></img>
+      <img className='image' alt={title} src={image}></img>
       <div className='card-text-wrapper'>
         <div style={{ margin: 10 }}>
           <h2>{title}</h2>
