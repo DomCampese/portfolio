@@ -31,7 +31,7 @@ const Contact = () => {
       'service_o7dy42h',
       'template_qqjtrml',
       toSend,
-      'user_V9malAR9KI5x2nSxzMMzE'
+      process.env.REACT_APP_RECAPTCHA_SITE_KEY
     )
       .then((response) => {
         if (response.status !== 200) {
