@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 import { MdCancel } from 'react-icons/md'
 import './message-box-styles.css'
 
