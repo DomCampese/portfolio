@@ -84,7 +84,7 @@ const Contact = () => {
           {(recaptchaComplete)
             ? <button type='submit'>Send Message</button>
             : <ReCAPTCHA
-                sitekey={'6LfKyjshAAAAAEEVmIhaIrt-HgufZlAAG5gkf7p8'}
+                sitekey={'6Lft6I4hAAAAAC3Jkk164iXW6YZsu99-_dhyRYgH'}
                 onChange={() => {
                   setRecaptchaComplete(true);
                 }}
