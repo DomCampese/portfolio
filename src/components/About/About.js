@@ -20,7 +20,7 @@ const About = () => {
           <p>
             I'm a Senior at the University of Pittsburgh studying Computer Science
             with a minor in Spanish. I'm a passionate full-stack Software Engineer and have worked with
-            React, HTML+CSS, Typescript, ASP.NET, C#, Java, Flask, Python, and C. 
+            React, Typescript, HTML+CSS, ASP.NET, C#, Java, Flask, Django, Python, and C. 
             I live and work in the Pittsburgh, PA area. Feel free to check out my work 
             and to reach out with any questions or opportunities!
           </p>

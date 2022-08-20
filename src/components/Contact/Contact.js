@@ -17,18 +17,12 @@ const Contact = () => {
     message: '',
     success: false
   });
-  
-  // TODO: set to false by default once recaptcha is set up
-  const [recaptchaComplete, setRecaptchaComplete] = useState(true);
+
+  const [recaptchaComplete, setRecaptchaComplete] = useState(false);
 
   /* Sends an email using emailJS */
   const onSubmit = (e) => {
     e.preventDefault();
-    
-    setUserMessage({
-      message: 'Currently in development mode.',
-      success: true
-    });
     
     send(
       'service_o7dy42h',
