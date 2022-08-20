@@ -23,7 +23,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: calc(100% - 300px);
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .card-text-wrapper h2 {

@@ -57,7 +57,7 @@
 .content .greeting {
   font-size: 30px;
   text-align: center;
-  margin-top: 0px;
+  margin: 0px;
 }
 
 .content .first-name {
@@ -88,5 +88,26 @@
   .content .greeting {
     font-size: 26px;
     text-align: center;
+  }
+}
+
+/* iPhone SE */
+@media screen and (max-width: 375px) {
+  .portrait-wrapper {
+    height: 200px;
+    width: 200px;
+  }
+
+  .portrait {
+    height: 225px;
+    width: 270px;
+  }
+
+  .content .greeting {
+    font-size: 22px;
+  }
+
+  .content .description {
+    font-size: 16px;
   }
 }

@@ -30,27 +30,27 @@ const Contact = () => {
       success: true
     });
     
-    // send(
-    //   'service_o7dy42h',
-    //   'template_qqjtrml',
-    //   toSend,
-    //   'user_V9malAR9KI5x2nSxzMMzE'
-    // )
-    //   .then((response) => {
-    //     if (response.status !== 200) {
-    //       throw new Error();
-    //     }
-    //     setUserMessage({
-    //       message: 'Your message was sent successfully. I will reply to you shortly!',
-    //       success: true
-    //     });
-    //   })
-    //   .catch((error) => {
-    //     setUserMessage({
-    //       message: 'Unable to send message. Please try again later.',
-    //       success: false
-    //     });
-    //   })
+    send(
+      'service_o7dy42h',
+      'template_qqjtrml',
+      toSend,
+      'user_V9malAR9KI5x2nSxzMMzE'
+    )
+      .then((response) => {
+        if (response.status !== 200) {
+          throw new Error();
+        }
+        setUserMessage({
+          message: 'Your message was sent successfully. I will reply to you shortly!',
+          success: true
+        });
+      })
+      .catch((error) => {
+        setUserMessage({
+          message: 'Unable to send message. Please try again later.',
+          success: false
+        });
+      })
   };
 
   const handleChange = (e) => {

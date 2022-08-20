@@ -15,8 +15,8 @@ const About = () => {
             <img className='portrait' src={portrait} alt='Dom Campese'></img>
           </div>
         </div>
+        <h2 className='greeting'>Hi there! I'm <span className='first-name'>Dom</span> Campese</h2>
         <div className='description'>
-          <h2 className='greeting'>Hi there! I'm <span className='first-name'>Dom</span> Campese</h2>
           <p>
             I'm a Senior at the University of Pittsburgh studying Computer Science
             with a minor in Spanish. I'm a passionate full-stack Software Engineer with experience
