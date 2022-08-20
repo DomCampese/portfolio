@@ -85,14 +85,6 @@
     margin-top: 80px;
   }
 
-  .content .greeting {
-    font-size: 26px;
-    text-align: center;
-  }
-}
-
-/* iPhone SE */
-@media screen and (max-width: 375px) {
   .portrait-wrapper {
     height: 200px;
     width: 200px;
@@ -103,6 +95,18 @@
     width: 270px;
   }
 
+  .content .greeting {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .content .description {
+    font-size: 18px;
+  }
+}
+
+/* iPhone SE */
+@media screen and (max-width: 375px) {
   .content .greeting {
     font-size: 22px;
   }
