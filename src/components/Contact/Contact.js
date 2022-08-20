@@ -1,6 +1,6 @@
 import React from 'react';
 import MessageBox from '../MessageBox/MessageBox';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { send } from 'emailjs-com';
 import ReCAPTCHA from "react-google-recaptcha";
 import './contact-styles.css'
@@ -19,19 +19,27 @@ const Contact = () => {
     success: false
   });
 
-  const [recaptchaComplete, setRecaptchaComplete] = useState(false);
+  const recaptchaRef = useRef(null);
 
   const isMobile = useMobile();
 
   /* Sends an email using emailJS */
   const onSubmit = (e) => {
     e.preventDefault();
-    
+
+    const recaptchaResponseToken = recaptchaRef.current.getValue();
+    recaptchaRef.current.reset();
+
+    const params = {
+      ...toSend,
+      'g-recaptcha-response': recaptchaResponseToken
+    }
+
     send(
-      'service_o7dy42h',
-      'template_qqjtrml',
-      toSend,
-      process.env.REACT_APP_RECAPTCHA_SITE_KEY
+      process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      params,
+      process.env.REACT_APP_EMAILJS_API_KEY
     )
       .then((response) => {
         if (response.status !== 200) {
@@ -84,15 +92,11 @@ const Contact = () => {
             value={toSend.reply_to}
             onChange={handleChange}
           />
-          {(recaptchaComplete)
-            ? <button type='submit'>Send Message</button>
-            : <ReCAPTCHA
-                sitekey={'6Ld2cJAhAAAAAG7c_OHymYbDt_icrrLcUm_YGk68'}
-                onChange={() => {
-                  setRecaptchaComplete(true);
-                }}
-            />
-          }
+          <ReCAPTCHA
+            ref={recaptchaRef}
+            sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
+          />
+          <button style={{ marginTop: 10 }} type='submit'>Send Message</button>
         </form>
         <MessageBox
           message={userMessage.message}
