@@ -31,11 +31,12 @@ const Contact = () => {
     recaptchaRef.current.reset();
 
     const params = {
-      ...toSend,
+      from_name: toSend.from_name,
+      to_name: toSend.to_name,
+      message: toSend.message,
+      reply_to: toSend.reply_to,
       'g-recaptcha-response': recaptchaResponseToken
     }
-
-    console.info(recaptchaResponseToken);
 
     send(
       process.env.REACT_APP_EMAILJS_SERVICE_ID,
