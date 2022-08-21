@@ -35,6 +35,8 @@ const Contact = () => {
       'g-recaptcha-response': recaptchaResponseToken
     }
 
+    console.info(recaptchaResponseToken);
+
     send(
       process.env.REACT_APP_EMAILJS_SERVICE_ID,
       process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
@@ -43,7 +45,6 @@ const Contact = () => {
     )
       .then((response) => {
         if (response.status !== 200) {
-          console.log(response);
           throw new Error();
         }
         setUserMessage({
