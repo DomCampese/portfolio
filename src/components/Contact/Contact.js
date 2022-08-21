@@ -31,10 +31,7 @@ const Contact = () => {
     recaptchaRef.current.reset();
 
     const params = {
-      from_name: toSend.from_name,
-      to_name: toSend.to_name,
-      message: toSend.message,
-      reply_to: toSend.reply_to,
+      ...toSend,
       'g-recaptcha-response': recaptchaResponseToken
     }
 
