@@ -2,7 +2,6 @@ import journalerImage from './images/journaler.png'
 import jumpyballImage from './images/jumpyball.png'
 import chatioImage from './images/chatio.png'
 import battleshipImage from './images/battleship.png'
-
 import ReactLogo from './components/svgs/ReactLogo'
 import TSLogo from './components/svgs/TSLogo'
 import HTMLLogo from './components/svgs/HTMLLogo'
@@ -13,7 +12,6 @@ import JavaLogo from './components/svgs/JavaLogo'
 import PythonLogo from './components/svgs/PythonLogo'
 import FlaskLogo from './components/svgs/FlaskLogo'
 import CLogo from './components/svgs/CLogo'
-
 
 export const description = `
   I'm a Senior at the University of Pittsburgh studying Computer Science with a minor in Spanish.

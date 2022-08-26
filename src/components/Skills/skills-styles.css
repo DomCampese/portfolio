@@ -6,8 +6,8 @@
 }
 
 .skill-card {
-  height: 155px;
-  width: 155px;
+  height: 145px;
+  width: 145px;
   padding: 10px;
   display: flex;
   flex-direction: column;
