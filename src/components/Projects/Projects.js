@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectCard from '../ProjectCard/ProjectCard'
 import './projects-styles.css'
-import { projectData } from './projectData'
+import { projectData } from '../../content'
 import useMobile from '../../hooks/useMobile'
 
 const Projects = () => {

@@ -2,6 +2,7 @@ import React from 'react';
 import portrait from '../../images/portrait.jpg'
 import { useScrollSection } from 'react-scroll-section'
 import './about-styles.css'
+import { description } from '../../content'
 
 const About = () => {
 
@@ -17,13 +18,7 @@ const About = () => {
         </div>
         <h2 className='greeting'>Hi there! I'm <span className='first-name'>Dom</span> Campese</h2>
         <div className='description'>
-          <p>
-            I'm a Senior at the University of Pittsburgh studying Computer Science
-            with a minor in Spanish. I'm a passionate full-stack Software Engineer and have worked with
-            React, React Native, Typescript, HTML+CSS, ASP.NET, C#, Java, Flask, Django, Python, and C. 
-            I live and work in the Pittsburgh, PA area. Feel free to check out my work 
-            and to reach out with any questions or opportunities!
-          </p>
+          <p>{description}</p>
         </div>
         <div className='intro-links-wrapper'>
             <div className='contact-button-wrapper'>
