@@ -6,6 +6,7 @@ import useMobile from '../../hooks/useMobile'
 const Nav = () => {
 
   const aboutSection = useScrollSection('about');
+  const skillsSection = useScrollSection('skills');
   const projectsSection = useScrollSection('projects');
   const contactSection = useScrollSection('contact');
 
@@ -43,6 +44,7 @@ const Nav = () => {
             <div ref={mobileSideMenuRef} className='mobile-nav-side-menu'>
               <ul>
                 <li onClick={() => handleSideMenuClick(aboutSection.onClick)} selected={aboutSection.selected}>About</li>
+                <li onClick={() => handleSideMenuClick(skillsSection.onClick)} selected={skillsSection.selected}>Skills</li>
                 <li onClick={() => handleSideMenuClick(projectsSection.onClick)} selected={projectsSection.selected}>Projects</li>
                 <li onClick={() => handleSideMenuClick(contactSection.onClick)} selected={contactSection.selected}>Contact</li>
               </ul>
@@ -52,6 +54,7 @@ const Nav = () => {
             <div className="nav-content-left">
               <ul>
                 <li onClick={aboutSection.onClick} selected={aboutSection.selected}>About</li>
+                <li onClick={() => handleSideMenuClick(skillsSection.onClick)} selected={skillsSection.selected}>Skills</li>
                 <li onClick={projectsSection.onClick} selected={projectsSection.selected}>Projects</li>
                 <li onClick={contactSection.onClick} selected={contactSection.selected}>Contact</li>
               </ul>

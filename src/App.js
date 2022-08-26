@@ -14,6 +14,7 @@ const App = () => {
         <Nav/>
         <div className='app'>
           <Section id='about'><About/></Section>
+          <Section id='skills'><div><p>Skills section goes here</p></div></Section>
           <Section id='projects'><Projects/></Section>
           <Section id='contact'><Contact/></Section>
         </div>

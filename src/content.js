@@ -3,6 +3,18 @@ import jumpyballImage from './images/jumpyball.png'
 import chatioImage from './images/chatio.png'
 import battleshipImage from './images/battleship.png'
 
+import ReactLogo from './components/svgs/ReactLogo'
+import TSLogo from './components/svgs/TSLogo'
+import HTMLLogo from './components/svgs/HTMLLogo'
+import CSSLogo from './components/svgs/CSSLogo'
+import  DotNetLogo from './components/svgs/DotNetLogo'
+import CSharpLogo from './components/svgs/CSSLogo'
+import JavaLogo from './components/svgs/JavaLogo'
+import PythonLogo from './components/svgs/PythonLogo'
+import FlaskLogo from './components/svgs/FlaskLogo'
+import CLogo from './components/svgs/CLogo'
+
+
 export const description = `
   I'm a Senior at the University of Pittsburgh studying Computer Science with a minor in Spanish.
   I'm a passionate full-stack Software Engineer and have worked with React, React Native, Typescript,
@@ -41,43 +53,43 @@ export const projects = [
 
 export const skills = [
   {
-    logo: 'placeholder',
+    logo: ReactLogo,
     name: 'React and React Native'
   },
   {
-    logo: 'placeholder',
+    logo: TSLogo,
     name: 'TypeScript'
   },
   {
-    logo: 'placeholder',
+    logo: HTMLLogo,
     name: 'HTML 5'
   },
   {
-    logo: 'placeholder',
+    logo: CSSLogo,
     name: 'CSS 3'
   },
   {
-    logo: 'placeholder',
+    logo: DotNetLogo,
     name: 'ASP .NET Core'
   },
   {
-    logo: 'placeholder',
+    logo: CSharpLogo,
     name: 'C Sharp'
   },
   {
-    logo: 'placeholder',
+    logo: JavaLogo,
     name: 'Java'
   },
   {
-    logo: 'placeholder',
+    logo: PythonLogo,
     name: 'Python 3'
   },
   {
-    logo: 'placeholder',
+    logo: FlaskLogo,
     name: 'Flask'
   },
   {
-    logo: 'placeholder',
+    logo: CLogo,
     name: 'C Language'
   },
 ]

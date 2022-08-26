@@ -1,7 +1,7 @@
 import React from 'react'
 import ProjectCard from '../ProjectCard/ProjectCard'
 import './projects-styles.css'
-import { projectData } from '../../content'
+import { projects } from '../../content'
 import useMobile from '../../hooks/useMobile'
 
 const Projects = () => {
@@ -13,7 +13,7 @@ const Projects = () => {
       <h1 style={(!isMobile) ? { marginBottom: 5 } : {}}>Projects</h1>
       {(!isMobile) && <div className='underline'></div>}
       <div className='projects-wrapper'>
-        {projectData.map((currentProject, index) => {
+        {projects.map((currentProject, index) => {
           return (
             <ProjectCard key={index} {...currentProject}/>
           )
