@@ -54,7 +54,7 @@ const Nav = () => {
             <div className="nav-content-left">
               <ul>
                 <li onClick={aboutSection.onClick} selected={aboutSection.selected}>About</li>
-                <li onClick={() => handleSideMenuClick(skillsSection.onClick)} selected={skillsSection.selected}>Skills</li>
+                <li onClick={skillsSection.onClick} selected={skillsSection.selected}>Skills</li>
                 <li onClick={projectsSection.onClick} selected={projectsSection.selected}>Projects</li>
                 <li onClick={contactSection.onClick} selected={contactSection.selected}>Contact</li>
               </ul>
