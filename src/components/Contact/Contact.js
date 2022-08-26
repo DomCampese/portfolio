@@ -4,7 +4,7 @@ import { useState, useRef } from 'react';
 import { send } from 'emailjs-com';
 import ReCAPTCHA from "react-google-recaptcha";
 import './contact-styles.css'
-import useMobile from '../../hooks/useMobile';
+import Header from '../reusable/Header'
 
 const Contact = () => {
   const [toSend, setToSend] = useState({
@@ -20,8 +20,6 @@ const Contact = () => {
   });
 
   const recaptchaRef = useRef(null);
-
-  const isMobile = useMobile();
 
   /* Sends an email using emailJS */
   const onSubmit = (e) => {
@@ -63,10 +61,9 @@ const Contact = () => {
   }
 
   return (
-    <div className='content' style={{ display: 'flex', justifyContent: 'center', marginBottom: 30 }}>
+    <div className='content full-height' style={{ display: 'flex', justifyContent: 'center' }}>
       <div className='form-wrapper'>
-        <h1 className='title' style={(!isMobile) ? { marginBottom: '5px' } : {}}>Contact</h1>
-        {(!isMobile) && <div className='underline'></div>}
+        <Header>Contact</Header>
         <form className='contact-form' onSubmit={onSubmit}>
           <label>Name</label>
           <input

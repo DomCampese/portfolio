@@ -8,7 +8,7 @@ import TSLogo from './components/svgs/TSLogo'
 import HTMLLogo from './components/svgs/HTMLLogo'
 import CSSLogo from './components/svgs/CSSLogo'
 import  DotNetLogo from './components/svgs/DotNetLogo'
-import CSharpLogo from './components/svgs/CSSLogo'
+import CSharpLogo from './components/svgs/CSharpLogo'
 import JavaLogo from './components/svgs/JavaLogo'
 import PythonLogo from './components/svgs/PythonLogo'
 import FlaskLogo from './components/svgs/FlaskLogo'
@@ -53,43 +53,43 @@ export const projects = [
 
 export const skills = [
   {
-    logo: ReactLogo,
+    Logo: ReactLogo,
     name: 'React and React Native'
   },
   {
-    logo: TSLogo,
+    Logo: TSLogo,
     name: 'TypeScript'
   },
   {
-    logo: HTMLLogo,
+    Logo: HTMLLogo,
     name: 'HTML 5'
   },
   {
-    logo: CSSLogo,
+    Logo: CSSLogo,
     name: 'CSS 3'
   },
   {
-    logo: DotNetLogo,
+    Logo: DotNetLogo,
     name: 'ASP .NET Core'
   },
   {
-    logo: CSharpLogo,
+    Logo: CSharpLogo,
     name: 'C Sharp'
   },
   {
-    logo: JavaLogo,
+    Logo: JavaLogo,
     name: 'Java'
   },
   {
-    logo: PythonLogo,
+    Logo: PythonLogo,
     name: 'Python 3'
   },
   {
-    logo: FlaskLogo,
+    Logo: FlaskLogo,
     name: 'Flask'
   },
   {
-    logo: CLogo,
+    Logo: CLogo,
     name: 'C Language'
   },
 ]

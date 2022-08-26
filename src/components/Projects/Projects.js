@@ -1,21 +1,28 @@
 import React from 'react'
-import ProjectCard from '../ProjectCard/ProjectCard'
 import './projects-styles.css'
 import { projects } from '../../content'
-import useMobile from '../../hooks/useMobile'
+import Header from '../reusable/Header'
 
 const Projects = () => {
-
-  const isMobile = useMobile();
-
   return (
     <div className='content'>
-      <h1 style={(!isMobile) ? { marginBottom: 5 } : {}}>Projects</h1>
-      {(!isMobile) && <div className='underline'></div>}
+      <Header>Projects</Header>
       <div className='projects-wrapper'>
-        {projects.map((currentProject, index) => {
+        {projects.map(({ title,image, description, demoUrl, githubUrl }, index) => {
           return (
-            <ProjectCard key={index} {...currentProject}/>
+            <div className='card' key={index}>
+              <img className='image' alt={title} src={image}></img>
+              <div className='card-text-wrapper'>
+                <div style={{ margin: 10 }}>
+                  <h2>{title}</h2>
+                  <p>{description}</p>
+                  <div style={{ display: 'flex' }}>
+                    {demoUrl && <a href={demoUrl}>Demo</a>}
+                    {githubUrl && <a href={githubUrl} style={demoUrl && { marginLeft: 12 }}>Code</a>}
+                  </div>
+                </div>  
+              </div>
+             </div>
           )
         })}
       </div>

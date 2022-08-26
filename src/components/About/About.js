@@ -9,7 +9,7 @@ const About = () => {
   const contactSection = useScrollSection('contact');
 
   return (
-    <div className='content' style={{ display: 'flex', justifyContent: 'center' }}>
+    <div className='content full-height' style={{ display: 'flex', justifyContent: 'center' }}>
       <div className='intro'>
         <div className='portrait-wrapper'>
           <div>

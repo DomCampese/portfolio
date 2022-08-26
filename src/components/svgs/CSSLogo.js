@@ -1,7 +1,7 @@
 const CSSLogo = () => {
   return (
-    <svg width="66" height="87" viewBox="0 0 66 87" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g clip-path="url(#clip0_21_205)">
+    <svg width="80" height="80" viewBox="0 0 66 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clipPath="url(#clip0_21_205)">
         <path d="M66 17.0975L59.9872 80.0024L32.9596 87L6.0064 80.0123L0 17.0975H66Z" fill="#264DE4"/>
         <path d="M54.8396 75.9969L59.9779 22.2418H33V81.6514L54.8396 75.9969Z" fill="#2965F1"/>
         <path d="M13.7693 45.5759L14.5098 53.2921H32.9997V45.5759H13.7693Z" fill="#EBEBEB"/>
