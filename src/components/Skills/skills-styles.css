@@ -6,9 +6,8 @@
 }
 
 .skill-card {
-  height: 145px;
-  width: 145px;
-  padding: 10px;
+  height: 160px;
+  width: 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,6 +19,27 @@
 }
 
 .skill-card-text {
-  font-size: 14px;
-  text-align: center;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 750px) {
+  .skill-card {
+    height: 130px;
+    width: 130px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow:  5px 5px 16px #e0e0e0,
+               -5px -5px 16px #ffffff;
+    margin: 10px;
+  }
+
+  .skill-card-text {
+    font-size: 16px;
+  }
 }

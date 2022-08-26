@@ -52,7 +52,7 @@ export const projects = [
 export const skills = [
   {
     Logo: ReactLogo,
-    name: 'React and React Native'
+    name: 'React'
   },
   {
     Logo: TSLogo,
