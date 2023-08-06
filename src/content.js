@@ -69,7 +69,6 @@ export const projects = [
     image: journalerImage,
     title: 'Journaler',
     description: 'A mental health tool that lets a user create and edit journal entries to track their mood, save memories about their day, or vent about their troubles. It is built with a React (JS) frontend and a Django (Python) backend REST API using JWT Authentication.',
-    demoUrl: 'https://journaler.netlify.app/',
     githubUrl: 'https://github.com/DomCampese/Journaler'
   },
   {
