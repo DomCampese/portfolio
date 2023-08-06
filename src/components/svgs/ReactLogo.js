@@ -9,4 +9,4 @@ const ReactLogo = () => {
   )
 }
 
-export default ReactLogo  
+export default ReactLogo

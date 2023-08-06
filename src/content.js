@@ -14,10 +14,11 @@ import FlaskLogo from './components/svgs/FlaskLogo'
 import CLogo from './components/svgs/CLogo'
 
 export const description = `
-  I'm a Senior at the University of Pittsburgh studying Computer Science with a minor in Spanish.
-  I'm a passionate full-stack Software Engineer specializing in developing web applications.
-  I live and work in the Pittsburgh, PA area. Please feel free to check out my work and to
-  reach out to me with any questions using the contact form below!
+  I'm a Software Engineer based in Pittsburgh, PA. I graduated Summa Cum Laude in 2023 from the
+  University of Pittbsurgh with a BS in Computer Science and a Spanish minor.
+  I have over a year of full stack industry experience using modern technologies like React (JS),
+  Angular (JS), and .NET CORE (C#). Please feel free to check out some of my side projects and to
+  reach out using the contact form below!
 `
 
 export const skills = [
@@ -39,7 +40,7 @@ export const skills = [
   },
   {
     Logo: DotNetLogo,
-    name: 'ASP .NET Core'
+    name: '.NET Core'
   },
   {
     Logo: CSharpLogo,
@@ -59,7 +60,7 @@ export const skills = [
   },
   {
     Logo: CLogo,
-    name: 'C Language'
+    name: 'C Lang'
   },
 ]
 

@@ -20,7 +20,7 @@ const Projects = () => {
                     {demoUrl && <a href={demoUrl}>Demo</a>}
                     {githubUrl && <a href={githubUrl} style={demoUrl && { marginLeft: 12 }}>Code</a>}
                   </div>
-                </div>  
+                </div>
               </div>
              </div>
           )

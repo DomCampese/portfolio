@@ -49,7 +49,7 @@ const Nav = () => {
                 <li onClick={() => handleSideMenuClick(contactSection.onClick)} selected={contactSection.selected}>Contact</li>
               </ul>
             </div>
-          </div>                
+          </div>
         : <div className='nav'>
             <div className="nav-content-left">
               <ul>

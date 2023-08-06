@@ -7,8 +7,8 @@ const MessageBox = ({ message, success, onDismiss }) => {
     (message) && (
       <div className={success ? 'success-box' : 'error-box'}>
         <p>{message}</p>
-        <button 
-          className='dismiss-button' 
+        <button
+          className='dismiss-button'
           onClick={() => {
             onDismiss();
           }}>
