@@ -12,7 +12,7 @@ import JavaLogo from './components/svgs/JavaLogo'
 import PythonLogo from './components/svgs/PythonLogo'
 import FlaskLogo from './components/svgs/FlaskLogo'
 import CLogo from './components/svgs/CLogo'
-import AngularLogo from './components/svgs/Angular'
+import AngularLogo from './components/svgs/AngularLogo'
 
 export const description = `
   I'm a Software Engineer based in Pittsburgh, PA. I graduated Summa Cum Laude in 2023 from the
