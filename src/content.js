@@ -12,6 +12,7 @@ import JavaLogo from './components/svgs/JavaLogo'
 import PythonLogo from './components/svgs/PythonLogo'
 import FlaskLogo from './components/svgs/FlaskLogo'
 import CLogo from './components/svgs/CLogo'
+import AngularLogo from './components/svgs/Angular'
 
 export const description = `
   I'm a Software Engineer based in Pittsburgh, PA. I graduated Summa Cum Laude in 2023 from the
@@ -39,6 +40,10 @@ export const skills = [
     name: 'CSS 3'
   },
   {
+    Logo: AngularLogo,
+    name: 'Angular'
+  },
+  {
     Logo: DotNetLogo,
     name: '.NET Core'
   },
@@ -61,7 +66,7 @@ export const skills = [
   {
     Logo: CLogo,
     name: 'C Lang'
-  },
+  }
 ]
 
 export const projects = [
