@@ -11,7 +11,6 @@ import CSharpLogo from './components/svgs/CSharpLogo'
 import JavaLogo from './components/svgs/JavaLogo'
 import PythonLogo from './components/svgs/PythonLogo'
 import FlaskLogo from './components/svgs/FlaskLogo'
-import CLogo from './components/svgs/CLogo'
 import AngularLogo from './components/svgs/AngularLogo'
 
 export const description = `
@@ -62,10 +61,6 @@ export const skills = [
   {
     Logo: FlaskLogo,
     name: 'Flask'
-  },
-  {
-    Logo: CLogo,
-    name: 'C Lang'
   }
 ]
 
