@@ -9,10 +9,8 @@ const MessageBox = ({ message, success, onDismiss }) => {
         <p>{message}</p>
         <button
           className='dismiss-button'
-          onClick={() => {
-            onDismiss();
-          }}>
-            <MdCancel/>
+          onClick={onDismiss}>
+            <MdCancel style={{ background: 'none' }}/>
         </button>
       </div>
     )

@@ -8,14 +8,33 @@
   justify-content: space-between;
 }
 
+.success-box p, .error-box p {
+  background: none;
+}
+
 .success-box {
-  color: var(--success-text-color);
   background-color: var(--success-background-color);
+}
+
+.success-box p {
+  color: var(--success-text-color);
+}
+
+.success-box svg {
+  fill: var(--success-text-color);
 }
 
 .error-box {
   color: var(--failure-text-color);
   background-color: var(--failure-background-color);
+}
+
+.error-box p {
+  color: var(--failure-text-color);
+}
+
+.error-box svg {
+  fill: var(--failure-text-color);
 }
 
 .dismiss-button {
