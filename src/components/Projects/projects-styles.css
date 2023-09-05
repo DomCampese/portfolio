@@ -10,12 +10,9 @@
 .card {
   width: 700px;
   border-radius: 15px;
-  box-shadow:  5px 5px 16px #e0e0e0,
-             -5px -5px 16px #ffffff;
-}
-
-.card:not(:last-child) {
-  margin-bottom: 25px;
+  box-shadow:  var(--shadow);
+  margin-bottom: 30px;
+  background-color: var(--card-background-color);
 }
 
 .image {
@@ -33,32 +30,48 @@
   justify-content: space-between;
   height: calc(100% - 300px);
   overflow: hidden;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  background-color: var(--card-background-color);
 }
 
 .card-text-wrapper h2 {
   margin: 0;
   font-size: 26px;
+  background-color: var(--card-background-color);
 }
 
 .card-text-wrapper p {
   margin: 10px 0 10px 0;
   font-size: 20px;
   line-height: 1.5;
+  background-color: var(--card-background-color);
 }
 
 .card-text-wrapper a {
-  color: #00A3FF;
+  color: var(--primary-color);
   font-size: 22px;
   text-decoration: none;
+  background-color: var(--card-background-color);
 }
 
 .card-text-wrapper a:hover {
-  color: #0276eb;
+  color: var(--primary-color-highlighted);
   text-decoration: underline;
+  background-color: var(--card-background-color);
 }
 
 .card-text-wrapper a:active {
-  color: #1d8eff;
+  color: var(--primary-color-active);
   text-decoration: underline;
+  background-color: var(--card-background-color);
+}
+
+.card-text-wrapper div {
+  background-color: var(--card-background-color);
+}
+
+.card-text {
+  background-color: var(--card-background-color);
 }
 

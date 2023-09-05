@@ -13,7 +13,7 @@ const Projects = () => {
             <div className='card' key={index}>
               <img className='image' alt={title} src={image}></img>
               <div className='card-text-wrapper'>
-                <div style={{ margin: 10 }}>
+                <div className='card-text' style={{ margin: 10 }}>
                   <h2>{title}</h2>
                   <p>{description}</p>
                   <div style={{ display: 'flex' }}>

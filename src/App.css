@@ -1,5 +1,37 @@
+[color-theme='light'] {
+  --text-color: #000000;
+  --background-color: #FFFFFF;
+  --card-background-color: #FFFFFF;
+  --primary-color: #00A3FF;
+  --primary-color-highlighted: #0276eb;
+  --primary-color-active: #32b1fa;
+  --success-text-color: #270;
+  --success-background-color: #DFF2BF;
+  --failure-text-color: #D8000C;
+  --failure-background-color: #FFBABA;
+  --shadow: 5px 5px 16px #e0e0e0, -5px -5px 16px #ffffff;
+  --contact-shadow: 0 0 20px #eee;
+}
+
+[color-theme='dark'] {
+  --text-color: #FFFFFF;
+  --background-color: #212121;
+  --card-background-color: #4e4e4e;
+  --primary-color: #00A3FF;
+  --primary-color-highlighted: #0095ec;
+  --primary-color-active: #32b1fa;
+  --success-text-color: #270;
+  --success-background-color: #DFF2BF;
+  --failure-text-color: #D8000C;
+  --failure-background-color: #FFBABA;
+  --shadow: none;
+  --contact-shadow: none;
+}
+
 * {
   font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 li {

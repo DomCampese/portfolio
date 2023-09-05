@@ -27,9 +27,9 @@
 
 .contact-form button {
   height: 40px;
-  background: #00A3FF;
-  color: #fff;
-  box-shadow: 0 0 20px #eee;
+  background: var(--primary-color);
+  color: white;
+  box-shadow: var(--contact-shadow);
   border-radius: 10px;
   font-weight: bold;
   display: flex;
@@ -41,9 +41,9 @@
 
 .contact-form button:hover {
   background-position: right center;
-  background: #0276eb;
+  background: var(--primary-color-highlighted);
 }
 
 .contact-form button:active {
-  background: #32b1fa
+  background: var(--primary-color-active);
 }

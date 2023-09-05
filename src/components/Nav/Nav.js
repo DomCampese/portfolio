@@ -2,8 +2,9 @@ import React, { useState, useRef } from 'react';
 import { useScrollSection } from 'react-scroll-section';
 import './nav-styles.css'
 import useMobile from '../../hooks/useMobile'
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
-const Nav = () => {
+const Nav = ({ isDarkMode, toggleDarkMode }) => {
 
   const aboutSection = useScrollSection('about');
   const skillsSection = useScrollSection('skills');
@@ -49,6 +50,14 @@ const Nav = () => {
                 <li onClick={() => handleSideMenuClick(contactSection.onClick)} selected={contactSection.selected}>Contact</li>
               </ul>
             </div>
+            <div className='dark-mode-switch-mobile'>
+              <DarkModeSwitch
+                style={{ background: 'none' }}
+                checked={isDarkMode}
+                onChange={toggleDarkMode}
+                size={30}
+              />
+            </div>
           </div>
         : <div className='nav'>
             <div className="nav-content-left">
@@ -59,6 +68,12 @@ const Nav = () => {
                 <li onClick={contactSection.onClick} selected={contactSection.selected}>Contact</li>
               </ul>
             </div>
+            <DarkModeSwitch
+              style={{ marginRight: 25 }}
+              checked={isDarkMode}
+              onChange={toggleDarkMode}
+              size={25}
+            />
           </div>
       }
     </>

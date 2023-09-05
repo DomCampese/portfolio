@@ -9,18 +9,18 @@
 }
 
 .success-box {
-  color: #270;
-  background-color: #DFF2BF;
+  color: var(--success-text-color);
+  background-color: var(--success-background-color);
 }
 
 .error-box {
-  color: #D8000C;
-  background-color: #FFBABA;
+  color: var(--failure-text-color);
+  background-color: var(--failure-background-color);
 }
 
 .dismiss-button {
   background: none;
   border: none;
   padding: 0;
-  margin: 0;  
+  margin: 0;
 }

@@ -17,21 +17,21 @@
   padding: 15px 45px;
   text-align: center;
   text-transform: uppercase;
-  background: #00A3FF;
-  color: #fff;
-  box-shadow: 0 0 20px #eee;
+  background: var(--primary-color);
+  color: white;
+  box-shadow: var(--contact-box-shadow);
   border-radius: 50px;
-  font-weight: bold; 
+  font-weight: bold;
   list-style-type: none;
 }
 
 .contact-button:hover {
   background-position: right center;
-  background: #0276eb;
+  background: var(--primary-color-highlighted);
 }
 
 .contact-button:active {
-  background: #0f86fc
+  background: var(--primary-color-active);
 }
 
 .portrait-wrapper {
@@ -70,6 +70,10 @@
 
 .intro-link {
   margin-left: 12px;
+}
+
+.intro-svg {
+  fill: var(--text-color)
 }
 
 .description p {

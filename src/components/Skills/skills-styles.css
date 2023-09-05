@@ -13,15 +13,20 @@
   align-items: center;
   justify-content: center;
   border-radius: 15px;
-  box-shadow:  5px 5px 16px #e0e0e0,
-             -5px -5px 16px #ffffff;
+  box-shadow:  var(--shadow);
   margin: 10px;
+  background-color: var(--card-background-color);
 }
 
 .skill-card-text {
   font-size: 16px;
   margin-top: 5px;
   margin-bottom: 0px;
+  background-color: var(--card-background-color);
+}
+
+.skill-card-svg {
+  background-color: var(--card-background-color);
 }
 
 @media screen and (max-width: 750px) {
@@ -34,8 +39,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 15px;
-    box-shadow:  5px 5px 16px #e0e0e0,
-               -5px -5px 16px #ffffff;
+    box-shadow:  var(--shadow);
     margin: 10px;
   }
 
