@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import Nav from './components/Nav/Nav.js';
 import Skills from './components/Skills/Skills.js'
@@ -19,6 +19,12 @@ const App = () => {
   const toggleDarkMode = (checked) => {
     setIsDarkMode(checked);
   }
+
+  // Ensures the area around the iphone notch matches the background color of the theme
+  useEffect(() => {
+    const backgroundColorCssVar = getComputedStyle(document.documentElement).getPropertyValue('--background-color');
+    document.getElementById('theme-color').setAttribute('content', backgroundColorCssVar);
+  }, [isDarkMode])
 
   return (
     <>
