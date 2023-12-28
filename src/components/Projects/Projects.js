@@ -17,7 +17,7 @@ const Projects = () => {
                   <h2>{title}</h2>
                   <p>{description}</p>
                   <div style={{ display: 'flex' }}>
-                    {demoUrl && <a href={demoUrl}>Demo</a>}
+                    {demoUrl && <a href={demoUrl}>Play</a>}
                     {githubUrl && <a href={githubUrl} style={demoUrl && { marginLeft: 12 }}>Code</a>}
                   </div>
                 </div>

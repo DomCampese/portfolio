@@ -28,7 +28,7 @@
   --contact-shadow: none;
 }
 
-* {
+* :not(svg) {
   font-family: 'Roboto', sans-serif;
   color: var(--text-color);
   background-color: var(--background-color);

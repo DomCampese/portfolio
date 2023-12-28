@@ -12,12 +12,14 @@ import JavaLogo from './components/svgs/JavaLogo'
 import PythonLogo from './components/svgs/PythonLogo'
 import FlaskLogo from './components/svgs/FlaskLogo'
 import AngularLogo from './components/svgs/AngularLogo'
+import KotlinLogo from './components/svgs/KotlinLogo'
+import SpringBootLogo from './components/svgs/SpringBootLogo'
 
 export const description = `
-  I'm a Software Engineer based in Pittsburgh, PA. I graduated Summa Cum Laude in 2023 from the
+  I'm a fullstack Software Engineer in Pittsburgh, PA. I graduated Summa Cum Laude in 2023 from the
   University of Pittbsurgh with a BS in Computer Science and a Spanish minor.
-  I have over a year of full stack industry experience using modern technologies like React (JS),
-  Angular (JS), and .NET CORE (C#). Please feel free to check out some of my side projects and to
+  I have over a year of industry experience using modern technologies like React/React Native (TypeScript),
+  Angular (TypeScript), Spring Boot (Kotlin), and .NET CORE (C#). Please feel free to check out some of my side projects and to
   reach out using the contact form below!
 `
 
@@ -29,6 +31,14 @@ export const skills = [
   {
     Logo: TSLogo,
     name: 'TypeScript'
+  },
+  {
+    Logo: KotlinLogo,
+    name: 'Kotlin'
+  },
+  {
+    Logo: SpringBootLogo,
+    name: 'Spring Boot'
   },
   {
     Logo: HTMLLogo,
@@ -43,12 +53,12 @@ export const skills = [
     name: 'Angular'
   },
   {
-    Logo: DotNetLogo,
-    name: '.NET Core'
-  },
-  {
     Logo: CSharpLogo,
     name: 'C Sharp'
+  },
+  {
+    Logo: DotNetLogo,
+    name: '.NET Core'
   },
   {
     Logo: JavaLogo,
@@ -66,6 +76,18 @@ export const skills = [
 
 export const projects = [
   {
+    image: chatioImage,
+    title: 'Chat.io',
+    description: 'A website that allows a user to create, join, and participate in real-time chatrooms. Leverages HTML, CSS, and JavaScript on the frontend and the Flask (Python) backend framework on the server side.',
+    githubUrl: 'https://github.com/DomCampese/Chat.io'
+  },
+  {
+    image: battleshipImage,
+    title: 'Battleship',
+    description: 'A web version of the classic game of Battleship. A dynamic pass and play game created with HTML, CSS, and JavaScript.',
+    githubUrl: 'https://github.com/DomCampese/battleship'
+  },
+  {
     image: journalerImage,
     title: 'Journaler',
     description: 'A mental health tool that lets a user create and edit journal entries to track their mood, save memories about their day, or vent about their troubles. It is built with a React (JS) frontend and a Django (Python) backend REST API using JWT Authentication.',
@@ -77,17 +99,5 @@ export const projects = [
     description: 'A clone of the viral Flappy Bird game built using the p5.js creative coding library. The game features score and high score tracking, a randomly generated world, and supports mobile and desktop gameplay.',
     demoUrl: 'https://domcampese.github.io/Jumpy-Ball/',
     githubUrl: 'https://github.com/DomCampese/Jumpy-Ball'
-  },
-  {
-    image: battleshipImage,
-    title: 'Battleship',
-    description: 'A web version of the classic game of Battleship. A dynamic pass and play game created with HTML, CSS, and JavaScript.',
-    githubUrl: 'https://github.com/DomCampese/battleship'
-  },
-  {
-    image: chatioImage,
-    title: 'Chat.io',
-    description: 'A website that allows a user to create, join, and participate in real-time chatrooms. Leverages HTML, CSS, and JavaScript on the frontend and the Flask (Python) backend framework on the server side.',
-    githubUrl: 'https://github.com/DomCampese/Chat.io'
   }
 ]

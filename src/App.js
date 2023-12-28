@@ -20,11 +20,13 @@ const App = () => {
     setIsDarkMode(checked);
   }
 
+  const isMobile = useMobile();
+
   return (
     <>
       <ThemeProvider isDarkMode={isDarkMode}/>
       <div className='App'>
-        <ScrollingProvider offset={useMobile() ? -12 : -80}>
+        <ScrollingProvider offset={isMobile ? -12 : -80}>
           <Nav isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode}/>
           <div className='app'>
             <Section id='about'><About/></Section>
