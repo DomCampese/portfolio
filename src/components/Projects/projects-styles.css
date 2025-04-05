@@ -11,8 +11,8 @@
   width: 700px;
   border-radius: 15px;
   box-shadow:  var(--shadow);
-  margin-bottom: 30px;
   background-color: var(--card-background-color);
+  margin-bottom: 30px;
 }
 
 .image {

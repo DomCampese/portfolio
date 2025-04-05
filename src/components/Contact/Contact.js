@@ -63,9 +63,9 @@ const Contact = () => {
   }
 
   return (
-    <div className='content full-height' style={{ display: 'flex', justifyContent: 'center' }}>
+    <div className='content full-height'>
+      <Header>Contact</Header>
       <div className='form-wrapper'>
-        <Header>Contact</Header>
         <form className='contact-form' onSubmit={onSubmit}>
           <label>Name</label>
           <input

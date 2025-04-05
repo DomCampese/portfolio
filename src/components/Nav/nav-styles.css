@@ -5,7 +5,7 @@
 .nav {
   position: fixed;
   top: 0;
-  height: 75px;
+  height: var(--header-height);
   width: 100%;
   opacity: .95;
   display: flex;

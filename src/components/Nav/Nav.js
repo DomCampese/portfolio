@@ -1,17 +1,13 @@
 import React, { useState, useRef } from 'react';
-import { useScrollSection } from 'react-scroll-section';
 import './nav-styles.css'
 import useMobile from '../../hooks/useMobile'
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
+import { Section } from '../../constants/Section';
+import { useScrollToSection } from '../../hooks/ScrollToSection';
 
 const Nav = ({ isDarkMode, toggleDarkMode }) => {
-
-  const aboutSection = useScrollSection('about');
-  const skillsSection = useScrollSection('skills');
-  const projectsSection = useScrollSection('projects');
-  const contactSection = useScrollSection('contact');
-
   const isMobile = useMobile();
+  const scrollToSection = useScrollToSection();
 
   const mobileSideMenuRef = useRef(null);
 
@@ -28,8 +24,8 @@ const Nav = ({ isDarkMode, toggleDarkMode }) => {
     setMobileNavOpen(!mobileNavOpen);
   }
 
-  const handleSideMenuClick = (sectionOnclick) => {
-    sectionOnclick();
+  const handleSideMenuClick = (section) => {
+    scrollToSection(section);
     toggleMobileSideMenu();
   }
 
@@ -44,10 +40,10 @@ const Nav = ({ isDarkMode, toggleDarkMode }) => {
             </button>
             <div ref={mobileSideMenuRef} className='mobile-nav-side-menu'>
               <ul>
-                <li onClick={() => handleSideMenuClick(aboutSection.onClick)} selected={aboutSection.selected}>About</li>
-                <li onClick={() => handleSideMenuClick(skillsSection.onClick)} selected={skillsSection.selected}>Skills</li>
-                <li onClick={() => handleSideMenuClick(projectsSection.onClick)} selected={projectsSection.selected}>Projects</li>
-                <li onClick={() => handleSideMenuClick(contactSection.onClick)} selected={contactSection.selected}>Contact</li>
+                <li onClick={() => handleSideMenuClick(Section.ABOUT)}>About</li>
+                <li onClick={() => handleSideMenuClick(Section.SKILLS)}>Skills</li>
+                <li onClick={() => handleSideMenuClick(Section.PROJECTS)}>Projects</li>
+                <li onClick={() => handleSideMenuClick(Section.CONTACT)}>Contact</li>
               </ul>
             </div>
             <div className='dark-mode-switch-mobile'>
@@ -62,10 +58,10 @@ const Nav = ({ isDarkMode, toggleDarkMode }) => {
         : <div className='nav'>
             <div className="nav-content-left">
               <ul>
-                <li onClick={aboutSection.onClick} selected={aboutSection.selected}>About</li>
-                <li onClick={skillsSection.onClick} selected={skillsSection.selected}>Skills</li>
-                <li onClick={projectsSection.onClick} selected={projectsSection.selected}>Projects</li>
-                <li onClick={contactSection.onClick} selected={contactSection.selected}>Contact</li>
+                <li onClick={() => scrollToSection(Section.ABOUT)}>About</li>
+                <li onClick={() => scrollToSection(Section.SKILLS)}>Skills</li>
+                <li onClick={() => scrollToSection(Section.PROJECTS)}>Projects</li>
+                <li onClick={() => scrollToSection(Section.CONTACT)}>Contact</li>
               </ul>
             </div>
             <DarkModeSwitch
