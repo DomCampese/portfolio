@@ -1,5 +1,3 @@
-import { useMemo } from "react";
-import { Section } from "../constants/Section";
 import useMobile from "./useMobile";
 
 export const useScrollToSection = () => {
