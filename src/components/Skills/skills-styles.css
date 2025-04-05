@@ -3,6 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 30px;
 }
 
 .skill-card {
@@ -31,8 +32,8 @@
 
 @media screen and (max-width: 750px) {
   .skill-card {
-    height: 130px;
-    width: 130px;
+    height: 128px;
+    width: 128px;
     padding: 10px;
     display: flex;
     flex-direction: column;

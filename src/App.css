@@ -1,3 +1,7 @@
+:root {
+  --header-height: 75px;
+}
+
 [color-theme='light'] {
   --text-color: #000000;
   --background-color: #FFFFFF;
@@ -43,7 +47,7 @@ h1 {
 }
 
 .app {
-  margin-top: 75px;
+  margin-top: var(--header-height);
 }
 
 .content {
@@ -51,7 +55,7 @@ h1 {
 }
 
 .full-height {
-  min-height: calc(100vh - 75px);
+  min-height: 100vh;
 }
 
 .content p {
@@ -79,10 +83,6 @@ h1 {
   .content {
     margin-left: 10px;
     margin-right: 10px;
-  }
-
-  .full-height {
-    min-height: 100vh;
   }
 
   h1 {

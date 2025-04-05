@@ -5,7 +5,7 @@ import { skills } from '../../content'
 
 const Skills = () => {
   return (
-    <div className='content'>
+    <div className='content full-height'>
       <Header>Skills</Header>
       <div className='skill-cards'>
         {skills.map(({ Logo, name }, index) => {
