@@ -5,7 +5,6 @@ import Skills from './components/Skills/Skills.js'
 import About from './components/About/About.js';
 import Contact from './components/Contact/Contact.js';
 import Projects from './components/Projects/Projects.js';
-import useMobile from './hooks/useMobile';
 import ThemeProvider from './components/ThemeProvider/ThemeProvider';
 import { Section } from './constants/Section';
 
@@ -19,8 +18,6 @@ const App = () => {
   const toggleDarkMode = (checked) => {
     setIsDarkMode(checked);
   }
-
-  const isMobile = useMobile();
 
   return (
     <>
