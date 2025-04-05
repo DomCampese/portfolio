@@ -3,11 +3,9 @@ import portrait from '../../images/portrait.jpg'
 import './about-styles.css'
 import { description } from '../../content'
 import { Section } from '../../constants/Section';
-import useMobile from '../../hooks/useMobile';
 import { useScrollToSection } from '../../hooks/ScrollToSection';
 
 const About = () => {
-  const isMobile = useMobile();
   const scrollToSection = useScrollToSection();
 
   return (
