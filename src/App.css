@@ -1,3 +1,7 @@
+:root {
+  --header-height: 75px;
+}
+
 [color-theme='light'] {
   --text-color: #000000;
   --background-color: #FFFFFF;
@@ -28,10 +32,6 @@
   --contact-shadow: none;
 }
 
-* {
-  --header-height: 75px;
-}
-
 * :not(svg) {
   font-family: 'Roboto', sans-serif;
   color: var(--text-color);
@@ -55,7 +55,7 @@ h1 {
 }
 
 .full-height {
-  min-height: calc(100vh + 20px);
+  min-height: 100vh;
 }
 
 .content p {

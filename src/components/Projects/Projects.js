@@ -5,7 +5,7 @@ import Header from '../reusable/Header'
 
 const Projects = () => {
   return (
-    <div className='content full-height'>
+    <div className='content'>
       <Header>Projects</Header>
       <div className='projects-wrapper'>
         {projects.map(({ title,image, description, demoUrl, githubUrl }, index) => {

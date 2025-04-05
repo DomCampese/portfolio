@@ -16,11 +16,10 @@ import KotlinLogo from './components/svgs/KotlinLogo'
 import SpringBootLogo from './components/svgs/SpringBootLogo'
 
 export const description = `
-  I'm a fullstack Software Engineer in Pittsburgh, PA. I graduated Summa Cum Laude in 2023 from the
+  I'm a full stack Software Engineer in Pittsburgh, PA. I graduated Summa Cum Laude in 2023 from the
   University of Pittbsurgh with a BS in Computer Science and a Spanish minor.
-  I have over a year of industry experience using modern technologies like React/React Native (TypeScript),
-  Angular (TypeScript), Spring Boot (Kotlin), and .NET CORE (C#). Please feel free to check out some of my side projects and to
-  reach out using the contact form below!
+  I have years of industry experience using modern technologies like Angular (TypeScript), React/React Native (TypeScript),
+  Spring Boot (Kotlin), and .NET CORE (C#). Please feel free to have a look around and reach out if you have any questions!
 `
 
 export const skills = [
