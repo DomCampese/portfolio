@@ -62,7 +62,6 @@
   z-index: 1;
   transform-origin: 4px 0px;
   transition: transform 0.2s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.2s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
 }
 
@@ -89,13 +88,10 @@
   left: 0;
   height: 100%;
   width: 80%;
-  display: flex;
   align-items: center;
   display: flex;
   justify-content: center;
-
   transform: translateX(-100%);
-  -webkit-transform: translateX(-100%);
 }
 
 .mobile-nav-side-menu ul {
@@ -105,10 +101,10 @@
 
 .mobile-nav-side-menu li {
   font-size: 36px;
-  width: 100%;
   list-style: none;
   background: none;
   color: black;
+  padding: 12px;
 }
 
 .slide-in {
