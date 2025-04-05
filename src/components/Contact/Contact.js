@@ -19,6 +19,8 @@ const Contact = () => {
     success: false
   });
 
+  const siteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
+
   const recaptchaRef = useRef(null);
 
   /* Sends an email using emailJS */
@@ -89,10 +91,12 @@ const Contact = () => {
             value={toSend.reply_to}
             onChange={handleChange}
           />
-          <ReCAPTCHA
-            ref={recaptchaRef}
-            sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
-          />
+          {siteKey &&
+            <ReCAPTCHA
+              ref={recaptchaRef}
+              sitekey={siteKey}
+            />
+          }
           <button style={{ marginTop: 10 }} type='submit'>Send Message</button>
         </form>
         <MessageBox
