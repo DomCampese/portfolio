@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import './nav-styles.css'
 import useMobile from '../../hooks/useMobile'
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
@@ -13,18 +13,20 @@ const Nav = ({ isDarkMode, toggleDarkMode }) => {
 
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
-  const toggleMobileSideMenu = () => {
-    if (mobileNavOpen) {
-      mobileSideMenuRef.current?.classList.add('slide-out');
-      mobileSideMenuRef.current?.classList.remove('slide-in');
-      document.documentElement?.classList.remove('no-scroll');
-    } else {
-      mobileSideMenuRef.current?.classList.add('slide-in');
-      mobileSideMenuRef.current?.classList.remove('slide-out');
-      document.documentElement.classList?.add('no-scroll');
-    }
-    setMobileNavOpen(!mobileNavOpen);
-  }
+  const toggleMobileSideMenu = useCallback(() => {
+    setMobileNavOpen(isMobileNavOpen => {
+      if (isMobileNavOpen) {
+        mobileSideMenuRef.current?.classList.add('slide-out');
+        mobileSideMenuRef.current?.classList.remove('slide-in');
+        document.documentElement?.classList.remove('no-scroll');
+      } else {
+        mobileSideMenuRef.current?.classList.add('slide-in');
+        mobileSideMenuRef.current?.classList.remove('slide-out');
+        document.documentElement.classList?.add('no-scroll');
+      }
+      return !isMobileNavOpen;
+    });
+  }, [mobileSideMenuRef]);
 
   const handleSideMenuClick = (section) => {
     scrollToSection(section);
@@ -32,10 +34,14 @@ const Nav = ({ isDarkMode, toggleDarkMode }) => {
   }
 
   useEffect(() => {
-    if (mobileNavOpen) {
+    if (mobileNavOpen && !isMobile) {
       toggleMobileSideMenu();
     }
-  }, [isMobile]);
+  }, [
+    isMobile,
+    mobileNavOpen,
+    toggleMobileSideMenu
+  ]);
 
   return (
     <>
