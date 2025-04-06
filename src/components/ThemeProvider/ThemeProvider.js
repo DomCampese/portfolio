@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 
 const ThemeProvider = ({ isDarkMode }) => {
-  const darkGray = '#121212';
+  const darkGray = '#212121';
   const white = '#FFFFFF';
 
   useEffect(() => {
