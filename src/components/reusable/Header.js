@@ -1,14 +1,9 @@
-import useMobile from '../../hooks/useMobile'
-
 const Header = ({ children }) => {
-
-  const isMobile = useMobile();
-
   return (
-    <>
-      <h1 style={(!isMobile) ? { marginBottom: 5 } : {}}>{children}</h1>
-      {(!isMobile) && <div className='underline'></div>}
-    </>
+    <div className='section-header'>
+      <h2>{children}</h2>
+      <div className='header-accent'></div>
+    </div>
   )
 }
 

@@ -8,9 +8,7 @@ import { useScrollToSection } from '../../hooks/ScrollToSection';
 const Nav = ({ isDarkMode, toggleDarkMode }) => {
   const isMobile = useMobile();
   const scrollToSection = useScrollToSection();
-
   const mobileSideMenuRef = useRef(null);
-
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   const toggleMobileSideMenu = useCallback(() => {
@@ -37,19 +35,14 @@ const Nav = ({ isDarkMode, toggleDarkMode }) => {
     if (mobileNavOpen && !isMobile) {
       toggleMobileSideMenu();
     }
-  }, [
-    isMobile,
-    mobileNavOpen,
-    toggleMobileSideMenu
-  ]);
+  }, [isMobile, mobileNavOpen, toggleMobileSideMenu]);
 
   return (
     <>
-      {(isMobile)
-        ? 
-          <>
+      {isMobile
+        ? <>
             {mobileNavOpen && <div onClick={toggleMobileSideMenu} className='backdrop'></div>}
-            <div className={(mobileNavOpen) ? 'mobile-nav ex-mark' : 'mobile-nav' }>
+            <div className={mobileNavOpen ? 'mobile-nav ex-mark' : 'mobile-nav'}>
               <button className='hamburger' onClick={toggleMobileSideMenu}>
                 <span></span>
                 <span></span>
@@ -65,29 +58,30 @@ const Nav = ({ isDarkMode, toggleDarkMode }) => {
               </div>
               <div className='dark-mode-switch-mobile'>
                 <DarkModeSwitch
-                  style={{ background: 'none' }}
                   checked={isDarkMode}
                   onChange={toggleDarkMode}
-                  size={30}
+                  size={28}
                 />
               </div>
             </div>
           </>
         : <div className='nav'>
-            <div className="nav-content-left">
+            <div></div>
+            <nav className='nav-center'>
               <ul>
                 <li onClick={() => scrollToSection(Section.ABOUT)}>About</li>
                 <li onClick={() => scrollToSection(Section.SKILLS)}>Skills</li>
                 <li onClick={() => scrollToSection(Section.PROJECTS)}>Projects</li>
                 <li onClick={() => scrollToSection(Section.CONTACT)}>Contact</li>
               </ul>
+            </nav>
+            <div className='nav-right'>
+              <DarkModeSwitch
+                checked={isDarkMode}
+                onChange={toggleDarkMode}
+                size={22}
+              />
             </div>
-            <DarkModeSwitch
-              style={{ marginRight: 25 }}
-              checked={isDarkMode}
-              onChange={toggleDarkMode}
-              size={25}
-            />
           </div>
       }
     </>

@@ -1,32 +1,90 @@
-.intro {
-  align-items: center;
+.about-section {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
 }
 
-.contact-button-wrapper {
+.about-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 72px;
+  align-items: center;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.portrait-col {
   display: flex;
   justify-content: center;
+}
+
+.portrait-wrapper {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--primary-color);
+  flex-shrink: 0;
+}
+
+.portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.about-text-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-name {
+  font-size: clamp(36px, 4vw, 56px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin: 0 0 10px 0;
+  color: var(--text-color);
+}
+
+.about-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin: 0 0 24px 0;
+  letter-spacing: 0.01em;
+}
+
+.about-description p {
+  font-size: 17px;
+  color: var(--text-muted);
+  margin: 0;
+  max-width: 560px;
+}
+
+.about-links {
+  display: flex;
   align-items: center;
+  gap: 12px;
+  margin-top: 32px;
 }
 
 .contact-button {
   text-decoration: none;
-  padding: 15px 45px;
+  padding: 11px 28px;
   text-align: center;
-  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
   background: var(--primary-color);
-  color: white;
-  box-shadow: var(--contact-box-shadow);
-  border-radius: 50px;
-  font-weight: bold;
+  color: #ffffff;
+  border-radius: 8px;
   list-style-type: none;
+  transition: background-color 0.15s ease;
 }
 
 .contact-button:hover {
-  background-position: right center;
   background: var(--primary-color-highlighted);
 }
 
@@ -34,88 +92,79 @@
   background: var(--primary-color-active);
 }
 
-.portrait-wrapper {
+.resume-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 11px 18px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.resume-link:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.icon-link {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  height: 260px;
-  width: 260px;
-  overflow: hidden;
+  border: 1px solid var(--border-color);
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+  text-decoration: none;
 }
 
-.portrait {
-  height: 300px;
-  width: 380px;
-}
-
-.content .description {
-  text-align: justify;
-  font-size: 20px;
-}
-
-.content .greeting {
-  font-size: 30px;
-  text-align: center;
-  margin: 0px;
-}
-
-.content .first-name {
-  color: #00A3FF;
-}
-
-.intro-links-wrapper {
-  display: flex;
-}
-
-.intro-link {
-  margin-left: 12px;
+.icon-link:hover {
+  border-color: var(--primary-color);
+  background-color: rgba(96, 165, 250, 0.08);
 }
 
 .intro-svg {
-  fill: var(--text-color)
+  fill: var(--text-color);
+  display: block;
 }
 
-.description p {
-  margin: 0;
+@media screen and (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 36px;
+  }
+
+  .about-links {
+    justify-content: center;
+  }
+
+  .about-description p {
+    max-width: 100%;
+  }
 }
 
 @media screen and (max-width: 750px) {
-  .intro {
-    margin-top: 0px;
-  }
-
-  .about-wrapper {
-    margin-top: 80px;
+  .about-section {
+    padding-top: 40px;
   }
 
   .portrait-wrapper {
-    height: 200px;
-    width: 200px;
+    width: 180px;
+    height: 180px;
   }
 
-  .portrait {
-    height: 225px;
-    width: 270px;
+  .about-name {
+    font-size: 36px;
   }
 
-  .content .greeting {
-    font-size: 22px;
-    text-align: center;
-  }
-
-  .content .description {
-    font-size: 18px;
-  }
-}
-
-/* iPhone SE */
-@media screen and (max-width: 375px) {
-  .content .greeting {
-    font-size: 22px;
-  }
-
-  .content .description {
+  .about-description p {
     font-size: 16px;
   }
 }

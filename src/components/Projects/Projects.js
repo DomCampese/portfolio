@@ -5,26 +5,37 @@ import Header from '../reusable/Header'
 
 const Projects = () => {
   return (
-    <div className='content'>
+    <div className='content projects-section'>
       <Header>Projects</Header>
-      <div className='projects-wrapper'>
-        {projects.map(({ title,image, description, demoUrl, githubUrl }, index) => {
-          return (
-            <div className='card' key={index}>
-              <img className='image' alt={title} src={image}></img>
-              <div className='card-text-wrapper'>
-                <div className='card-text' style={{ margin: 10 }}>
-                  <h2>{title}</h2>
-                  <p>{description}</p>
-                  <div style={{ display: 'flex' }}>
-                    {demoUrl && <a href={demoUrl}>Play</a>}
-                    {githubUrl && <a href={githubUrl} style={demoUrl && { marginLeft: 12 }}>Code</a>}
-                  </div>
+      <div className='projects-list'>
+        {projects.map(({ title, image, description, tags, demoUrl, githubUrl }, index) => (
+          <div className='project-card' key={index}>
+            <img className='project-image' alt={title} src={image} />
+            <div className='project-text'>
+              <h3 className='project-title'>{title}</h3>
+              <p className='project-description'>{description}</p>
+              {tags && (
+                <div className='project-tags'>
+                  {tags.map(tag => (
+                    <span className='project-tag' key={tag}>{tag}</span>
+                  ))}
                 </div>
+              )}
+              <div className='project-links'>
+                {demoUrl && (
+                  <a href={demoUrl} className='project-link project-link-primary' target='_blank' rel='noreferrer'>
+                    Live demo
+                  </a>
+                )}
+                {githubUrl && (
+                  <a href={githubUrl} className='project-link' target='_blank' rel='noreferrer'>
+                    View code
+                  </a>
+                )}
               </div>
-             </div>
-          )
-        })}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   )

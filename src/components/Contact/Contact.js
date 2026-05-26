@@ -63,7 +63,7 @@ const Contact = () => {
   }
 
   return (
-    <div className='content full-height'>
+    <div className='content contact-section full-height'>
       <Header>Contact</Header>
       <div className='form-wrapper'>
         <form className='contact-form' onSubmit={onSubmit}>

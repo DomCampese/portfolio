@@ -1,15 +1,18 @@
-.success-box, .error-box {
-  border-radius: 10px;
-  height: 50px;
-  padding: 0 10px 0 10px;
+.success-box,
+.error-box {
+  border-radius: 8px;
+  padding: 12px 14px;
   display: flex;
-  margin-top: 10px;
+  margin-top: 12px;
   align-items: center;
   justify-content: space-between;
+  gap: 12px;
 }
 
-.success-box p, .error-box p {
-  background: none;
+.success-box p,
+.error-box p {
+  margin: 0;
+  font-size: 14px;
 }
 
 .success-box {
@@ -25,7 +28,6 @@
 }
 
 .error-box {
-  color: var(--failure-text-color);
   background-color: var(--failure-background-color);
 }
 
@@ -42,4 +44,8 @@
   border: none;
   padding: 0;
   margin: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
 }
