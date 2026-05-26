@@ -23,7 +23,7 @@ const numberWords = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eig
 const yearsAtJob = new Date().getFullYear() - JOB_START_YEAR;
 const yearsAtJobWord = numberWords[yearsAtJob - 1] ?? `${yearsAtJob}`;
 
-export const description = `Software engineer based in Pittsburgh, PA. I graduated Summa Cum Laude from Pitt in 2023 with a CS degree and a minor in Spanish. For the past ${yearsAtJobWord} years I've been an engineer at a Fortune 500 retailer, working customer-facing E-commerce application that serves a high volume of users, primarily in Angular and TypeScript. Outside of work I build full-stack projects in React, Angular, Svelte, Python, and more.`;
+export const description = `Software engineer based in Pittsburgh, PA. I graduated Summa Cum Laude from Pitt in 2023 with a CS degree and a minor in Spanish. For the past ${yearsAtJobWord} years I've been an engineer at a Fortune 500 retailer, working on a customer-facing E-commerce application that serves a high volume of users, primarily in Angular and TypeScript. Outside of work I build full-stack projects in React, Angular, Svelte, Python, and more.`;
 
 export const skills: SkillItem[] = [
   { Logo: AngularLogo, name: 'Angular' },
