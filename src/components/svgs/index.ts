@@ -1,0 +1,13 @@
+export { default as AngularLogo } from './AngularLogo';
+export { default as CLogo } from './CLogo';
+export { default as CSSLogo } from './CSSLogo';
+export { default as CSharpLogo } from './CSharpLogo';
+export { default as DotNetLogo } from './DotNetLogo';
+export { default as FlaskLogo } from './FlaskLogo';
+export { default as HTMLLogo } from './HTMLLogo';
+export { default as JavaLogo } from './JavaLogo';
+export { default as KotlinLogo } from './KotlinLogo';
+export { default as PythonLogo } from './PythonLogo';
+export { default as ReactLogo } from './ReactLogo';
+export { default as SpringBootLogo } from './SpringBootLogo';
+export { default as TSLogo } from './TSLogo';

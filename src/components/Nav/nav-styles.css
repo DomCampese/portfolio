@@ -75,6 +75,8 @@
   border: none;
   padding: 4px;
   cursor: pointer;
+  position: relative;
+  z-index: 200;
 }
 
 .hamburger span {
@@ -85,7 +87,7 @@
   position: relative;
   background: var(--text-color);
   border-radius: 3px;
-  transform-origin: 4px 0px;
+  transform-origin: center center;
   transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1.0),
               opacity 0.25s ease;
 }
@@ -97,7 +99,7 @@
 .ex-mark span:nth-child(1) {
   background-color: var(--text-color);
   opacity: 1;
-  transform: rotate(45deg) translate(0, -2px);
+  transform: translateY(8px) rotate(45deg);
 }
 
 .ex-mark span:nth-last-child(2) {
@@ -107,7 +109,7 @@
 
 .ex-mark span:nth-last-child(1) {
   background-color: var(--text-color);
-  transform: rotate(-45deg) translate(0, -2px);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .mobile-nav-side-menu {
