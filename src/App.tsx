@@ -4,9 +4,7 @@ import { Nav, Skills, About, Contact, Projects, ThemeProvider } from '@component
 import { Section } from '@constants';
 
 const App = () => {
-  const [isDarkMode, setIsDarkMode] = useState(
-    () => window.matchMedia?.('(prefers-color-scheme: dark)').matches ?? false
-  );
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   const toggleDarkMode = (checked: boolean) => {
     setIsDarkMode(checked);
