@@ -2,6 +2,7 @@ import { type FC } from 'react';
 import journalerImage from '@images/journaler.png';
 import jumpyballImage from '@images/jumpyball.png';
 import chatioImage from '@images/chatio.png';
+import backroomsImage from '@images/backrooms.jpg';
 import { ReactLogo, TSLogo, HTMLLogo, CSSLogo, DotNetLogo, CSharpLogo, JavaLogo, PythonLogo, FlaskLogo, AngularLogo, KotlinLogo, SpringBootLogo } from '@components/svgs';
 
 export interface SkillItem {
@@ -41,6 +42,13 @@ export const skills: SkillItem[] = [
 ];
 
 export const projects: ProjectItem[] = [
+  {
+    image: backroomsImage,
+    title: 'The Backrooms',
+    description: 'AI experiment: a native backrooms horror game built in a small C++ codebase with raylib, with all procedurally generated assets. Mostly generated to see how far I could push the newer models and what I could learn about low level game dev. In active development.',
+    tags: ['C++', 'raylib', 'Agents'],
+    githubUrl: 'https://github.com/DomCampese/backrooms-game',
+  },
   {
     image: journalerImage,
     title: 'Journaler',
