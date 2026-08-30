@@ -26,8 +26,8 @@
 .project-image {
   width: 100%;
   height: 100%;
-  min-height: 220px;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: top;
   display: block;
 }
 
@@ -108,8 +108,7 @@
   }
 
   .project-image {
-    height: 220px;
-    min-height: unset;
+    height: auto;
   }
 
   .project-text {
@@ -118,10 +117,6 @@
 }
 
 @media screen and (max-width: 750px) {
-  .project-image {
-    height: 180px;
-  }
-
   .project-text {
     padding: 20px;
   }
