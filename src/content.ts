@@ -45,8 +45,8 @@ export const projects: ProjectItem[] = [
   {
     image: backroomsImage,
     title: 'The Backrooms',
-    description: 'AI experiment: a native backrooms horror game built in a small C++ codebase with raylib, with all procedurally generated assets. Mostly generated to see how far I could push the newer models and what I could learn about low level game dev. In active development.',
-    tags: ['C++', 'raylib', 'Agents'],
+    description: 'AI experiment: a native backrooms horror game built in a small C++ codebase with raylib, with all procedurally generated assets. Five levels deep so far, each with its own palette, lighting, and enemies. Mostly generated to see how far I could push the newer models and what I could learn about how lower level games are built. In active development.',
+    tags: ['C++', 'raylib', 'Game Development'],
     githubUrl: 'https://github.com/DomCampese/backrooms-game',
   },
   {
