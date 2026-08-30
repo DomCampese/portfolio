@@ -64,7 +64,9 @@ li {
 }
 
 .content {
-  margin: 0 20%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 clamp(20px, 6vw, 120px);
 }
 
 .full-height {
@@ -122,7 +124,7 @@ li {
   }
 
   .content {
-    margin-left: 20px;
-    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
