@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import './nav-styles.css';
 import { useMobile, useScrollToSection } from '@hooks';
-import { DarkModeSwitch } from 'react-toggle-dark-mode';
+import { FiMoon, FiSun } from 'react-icons/fi';
 import { Section } from '@constants';
 
 interface NavProps {
@@ -12,7 +12,7 @@ interface NavProps {
 const Nav = ({ isDarkMode, toggleDarkMode }: NavProps) => {
   const isMobile = useMobile();
   const scrollToSection = useScrollToSection();
-  const mobileSideMenuRef = useRef<HTMLDivElement>(null);
+  const mobileSideMenuRef = useRef<HTMLElement>(null);
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   const toggleMobileSideMenu = useCallback(() => {
@@ -47,44 +47,50 @@ const Nav = ({ isDarkMode, toggleDarkMode }: NavProps) => {
         ? <>
             {mobileNavOpen && <div onClick={toggleMobileSideMenu} className='backdrop'></div>}
             <div className={mobileNavOpen ? 'mobile-nav ex-mark' : 'mobile-nav'}>
-              <button className='hamburger' onClick={toggleMobileSideMenu}>
+              <button className='hamburger' onClick={toggleMobileSideMenu} aria-label={mobileNavOpen ? 'Close navigation' : 'Open navigation'} aria-expanded={mobileNavOpen} aria-controls='mobile-menu'>
                 <span></span>
                 <span></span>
                 <span></span>
               </button>
-              <div ref={mobileSideMenuRef} className='mobile-nav-side-menu'>
+              <nav id='mobile-menu' ref={mobileSideMenuRef} className='mobile-nav-side-menu' aria-label='Main navigation' aria-hidden={!mobileNavOpen}>
                 <ul>
-                  <li onClick={() => handleSideMenuClick(Section.ABOUT)}>About</li>
-                  <li onClick={() => handleSideMenuClick(Section.SKILLS)}>Skills</li>
-                  <li onClick={() => handleSideMenuClick(Section.PROJECTS)}>Projects</li>
-                  <li onClick={() => handleSideMenuClick(Section.CONTACT)}>Contact</li>
+                  <li><button type='button' onClick={() => handleSideMenuClick(Section.ABOUT)}>About</button></li>
+                  <li><button type='button' onClick={() => handleSideMenuClick(Section.SKILLS)}>Skills</button></li>
+                  <li><button type='button' onClick={() => handleSideMenuClick(Section.PROJECTS)}>Projects</button></li>
+                  <li><button type='button' onClick={() => handleSideMenuClick(Section.CONTACT)}>Contact</button></li>
                 </ul>
-              </div>
+              </nav>
               <div className='dark-mode-switch-mobile'>
-                <DarkModeSwitch
-                  checked={isDarkMode}
-                  onChange={toggleDarkMode}
-                  size={28}
-                />
+                <button
+                  type='button'
+                  className='theme-toggle'
+                  onClick={() => toggleDarkMode(!isDarkMode)}
+                  aria-label={isDarkMode ? 'Switch to light theme' : 'Switch to dark theme'}
+                >
+                  {isDarkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
+                </button>
               </div>
             </div>
           </>
         : <div className='nav'>
             <div></div>
-            <nav className='nav-center'>
+            <nav className='nav-center' aria-label='Main navigation'>
               <ul>
-                <li onClick={() => scrollToSection(Section.ABOUT)}>About</li>
-                <li onClick={() => scrollToSection(Section.SKILLS)}>Skills</li>
-                <li onClick={() => scrollToSection(Section.PROJECTS)}>Projects</li>
-                <li onClick={() => scrollToSection(Section.CONTACT)}>Contact</li>
+                <li><button type='button' onClick={() => scrollToSection(Section.ABOUT)}>About</button></li>
+                <li><button type='button' onClick={() => scrollToSection(Section.SKILLS)}>Skills</button></li>
+                <li><button type='button' onClick={() => scrollToSection(Section.PROJECTS)}>Projects</button></li>
+                <li><button type='button' onClick={() => scrollToSection(Section.CONTACT)}>Contact</button></li>
               </ul>
             </nav>
             <div className='nav-right'>
-              <DarkModeSwitch
-                checked={isDarkMode}
-                onChange={toggleDarkMode}
-                size={22}
-              />
+              <button
+                type='button'
+                className='theme-toggle'
+                onClick={() => toggleDarkMode(!isDarkMode)}
+                aria-label={isDarkMode ? 'Switch to light theme' : 'Switch to dark theme'}
+              >
+                {isDarkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
+              </button>
             </div>
           </div>
       }

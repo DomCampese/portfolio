@@ -6,7 +6,7 @@
 .about-grid {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 72px;
+  gap: 56px;
   align-items: center;
   width: 100%;
   padding: 40px 0;
@@ -22,7 +22,7 @@
   height: 220px;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 0 0 1px var(--primary-color), 0 0 20px 4px rgba(96, 165, 250, 0.2);
+  border: 1px solid var(--border-color);
   flex-shrink: 0;
 }
 
@@ -67,7 +67,8 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: 32px;
+  margin-top: 28px;
+  flex-wrap: wrap;
 }
 
 .contact-button {
@@ -77,9 +78,9 @@
   font-weight: 600;
   letter-spacing: 0.01em;
   color: var(--text-color);
-  border-radius: 8px;
+  border-radius: 4px;
   border: 1px solid var(--border-color);
-  list-style-type: none;
+  background: transparent;
   transition: border-color 0.15s ease, color 0.15s ease;
   cursor: pointer;
 }
@@ -95,8 +96,7 @@
   color: var(--text-color);
   text-decoration: none;
   padding: 11px 18px;
-  border-radius: 8px;
-  border: 1px solid var(--border-color);
+  border-radius: 4px;
   display: flex;
   align-items: center;
   gap: 6px;
@@ -114,19 +114,17 @@
   justify-content: center;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  border: 1px solid var(--border-color);
   transition: border-color 0.15s ease, background-color 0.15s ease;
   text-decoration: none;
+  color: var(--text-muted);
 }
 
 .icon-link:hover {
-  border-color: var(--primary-color);
-  background-color: rgba(96, 165, 250, 0.08);
+  color: var(--primary-color);
 }
 
 .intro-svg {
-  fill: var(--text-color);
+  fill: currentColor;
   display: block;
 }
 

@@ -9,8 +9,6 @@
   align-items: center;
   padding: 0 32px;
   background-color: var(--nav-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-color);
   z-index: 100;
 }
@@ -28,19 +26,21 @@
   background: none;
 }
 
-.nav-center li {
+.nav-center button {
   padding: 7px 14px;
   font-size: 14px;
   font-weight: 500;
   color: var(--text-color);
-  border-radius: 7px;
-  transition: color 0.15s ease, background-color 0.15s ease;
+  border: 0;
+  cursor: pointer;
+  transition: color 0.15s ease;
   background: none;
 }
 
-.nav-center li:hover {
+.nav-center button:hover {
   color: var(--primary-color);
-  background-color: rgba(96, 165, 250, 0.08);
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
 .nav-right {
@@ -123,6 +123,7 @@
   display: flex;
   justify-content: center;
   transform: translateX(-100%);
+  visibility: hidden;
   z-index: 150;
 }
 
@@ -137,6 +138,13 @@
 }
 
 .mobile-nav-side-menu li {
+  list-style: none;
+  width: 100%;
+}
+
+.mobile-nav-side-menu button {
+  border: 0;
+  cursor: pointer;
   font-size: 30px;
   font-weight: 600;
   list-style: none;
@@ -148,11 +156,12 @@
   transition: color 0.15s ease;
 }
 
-.mobile-nav-side-menu li:active {
+.mobile-nav-side-menu button:active {
   color: var(--primary-color);
 }
 
 .slide-in {
+  visibility: visible;
   animation: slide-in 0.15s forwards ease-in;
 }
 
@@ -177,4 +186,35 @@
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 140;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  color: var(--text-color);
+}
+
+.mobile-nav::before {
+  content: '';
+  position: fixed;
+  inset: 0 0 auto;
+  height: var(--header-height);
+  background: var(--background-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dark-mode-switch-mobile {
+  top: 10px;
+  right: 12px;
 }
