@@ -4,7 +4,7 @@ export const useScrollToSection = () => {
   const isMobile = useMobile();
 
   const scrollToSection = (section: string) => {
-    const offset = isMobile ? 10 : 100;
+    const offset = isMobile ? 64 : 100;
     const element = document.getElementById(section);
     if (!element) return;
     const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
