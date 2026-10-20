@@ -1,8 +1,8 @@
 import { type FC } from 'react';
-import journalerImage from '@images/journaler.png';
-import jumpyballImage from '@images/jumpyball.png';
-import chatioImage from '@images/chatio.png';
-import backroomsImage from '@images/backrooms.jpg';
+import journalerImage from '@images/journaler.webp';
+import jumpyballImage from '@images/jumpyball.webp';
+import chatioImage from '@images/chatio.webp';
+import backroomsImage from '@images/backrooms.webp';
 import { ReactLogo, TSLogo, HTMLLogo, CSSLogo, SassLogo, DotNetLogo, CSharpLogo, CPlusPlusLogo, JavaLogo, PythonLogo, DjangoLogo, AngularLogo, KotlinLogo, SpringBootLogo, KubernetesLogo, GitHubActionsLogo, ViteLogo, JestLogo } from '@components/svgs';
 
 export interface SkillItem {
