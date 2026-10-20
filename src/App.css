@@ -1,5 +1,8 @@
 :root {
-  --header-height: 64px;
+  --safe-area-top: env(safe-area-inset-top, 0px);
+  --safe-area-left: env(safe-area-inset-left, 0px);
+  --safe-area-right: env(safe-area-inset-right, 0px);
+  --header-height: calc(64px + var(--safe-area-top));
 }
 
 [color-theme='light'] {
@@ -8,7 +11,7 @@
   --background-color: #fafafa;
   --card-background-color: #ffffff;
   --border-color: #e4e4e7;
-  --primary-color: #3b82f6;
+  --primary-color: #2563b8;
   --primary-color-highlighted: #2563eb;
   --primary-color-active: #60a5fa;
   --success-text-color: #166534;
@@ -17,7 +20,6 @@
   --failure-background-color: #fee2e2;
   --button-background: #2563b8;
   --button-hover: #1d4f94;
-  --nav-bg: rgba(250, 250, 250, 0.88);
 }
 
 [color-theme='dark'] {
@@ -35,7 +37,6 @@
   --failure-background-color: rgba(248, 113, 113, 0.12);
   --button-background: #2563b8;
   --button-hover: #3476cd;
-  --nav-bg: rgba(17, 17, 17, 0.88);
 }
 
 *, *::before, *::after {
@@ -69,14 +70,10 @@ a, button {
   outline-offset: 5px;
 }
 
-.app {
-  margin-top: var(--header-height);
-}
-
 .content {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 clamp(20px, 4vw, 48px);
+  padding: 0 max(clamp(20px, 4vw, 48px), var(--safe-area-right)) 0 max(clamp(20px, 4vw, 48px), var(--safe-area-left));
 }
 
 .full-height {
@@ -91,10 +88,6 @@ a, button {
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-
-.no-scroll {
-  overflow: hidden;
 }
 
 .section-header {
@@ -118,13 +111,9 @@ a, button {
 }
 
 @media screen and (max-width: 750px) {
-  .app {
-    margin-top: var(--header-height);
-  }
-
   .content {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: max(20px, var(--safe-area-left));
+    padding-right: max(20px, var(--safe-area-right));
   }
 }
 
