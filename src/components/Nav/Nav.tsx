@@ -106,11 +106,12 @@ const Nav = ({ isDarkMode, toggleDarkMode }: NavProps) => {
         </nav>
         <button
           type='button'
-          className='theme-toggle'
+          className={`theme-toggle${isDarkMode ? ' is-dark' : ''}`}
           onClick={() => toggleDarkMode(!isDarkMode)}
           aria-label={isDarkMode ? 'Switch to light theme' : 'Switch to dark theme'}
         >
-          {isDarkMode ? <FiSun size={20} /> : <FiMoon size={20} />}
+          <FiSun size={20} className='theme-icon theme-icon-sun' aria-hidden='true' />
+          <FiMoon size={20} className='theme-icon theme-icon-moon' aria-hidden='true' />
         </button>
       </div>
     </header>
