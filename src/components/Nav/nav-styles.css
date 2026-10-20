@@ -137,15 +137,17 @@
     width: 24px;
     height: 2px;
     background: var(--text-color);
-    transition: transform 0.15s ease, opacity 0.15s ease;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
   }
 
   .is-open .hamburger span:first-child {
     transform: translateY(7px) rotate(45deg);
   }
 
+  /* Collapse the middle bar into the center as the X forms, rather than only fading it. */
   .is-open .hamburger span:nth-child(2) {
     opacity: 0;
+    transform: scaleX(0);
   }
 
   .is-open .hamburger span:last-child {
