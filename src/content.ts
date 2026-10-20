@@ -43,8 +43,8 @@ export const skills: SkillItem[] = [
   { Logo: DjangoLogo, name: 'Django' },
   { Logo: KubernetesLogo, name: 'Kubernetes' },
   { Logo: GitHubActionsLogo, name: 'GitHub Actions' },
-  { Logo: ViteLogo, name: 'Vite' },
   { Logo: JestLogo, name: 'Jest' },
+  { Logo: ViteLogo, name: 'Vite' },
 ];
 
 export const projects: ProjectItem[] = [
