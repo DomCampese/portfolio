@@ -23,7 +23,7 @@ const Projects = () => {
               <div className='project-links'>
                 {demoUrl && (
                   <a href={demoUrl} className='project-link' target='_blank' rel='noreferrer'>
-                    Live demo
+                    Play
                   </a>
                 )}
                 {githubUrl && (
