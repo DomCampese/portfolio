@@ -93,9 +93,6 @@ const Nav = ({ isDarkMode, toggleDarkMode }: NavProps) => {
         >
           <span /><span /><span />
         </button>
-        <button type='button' className='nav-home' onClick={() => navigate(Section.ABOUT)} aria-label='Dom Campese, back to top'>
-          DC<span aria-hidden='true'>.</span>
-        </button>
         <nav id='main-navigation' className='nav-center' aria-label='Main navigation'>
           <ul>
             {sections.map(({ id, label }) => (
