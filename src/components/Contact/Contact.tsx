@@ -75,27 +75,32 @@ const Contact = () => {
       <Header>Contact</Header>
       <div className='form-wrapper'>
         <form className='contact-form' onSubmit={onSubmit}>
-          <label>Name</label>
+          <label htmlFor='contact-name'>Name</label>
           <input
             type='text'
+            id='contact-name'
             name='from_name'
+            autoComplete='name'
             placeholder='Your name'
             value={toSend.from_name}
             onChange={handleChange}
           />
-          <label>Message</label>
+          <label htmlFor='contact-email'>Email</label>
+          <input
+            type='email'
+            id='contact-email'
+            name='reply_to'
+            autoComplete='email'
+            placeholder='Your email'
+            value={toSend.reply_to}
+            onChange={handleChange}
+          />
+          <label htmlFor='contact-message'>Message</label>
           <textarea
+            id='contact-message'
             name='message'
             placeholder='Your message'
             value={toSend.message}
-            onChange={handleChange}
-          />
-          <label>Email</label>
-          <input
-            type='text'
-            name='reply_to'
-            placeholder='Your email'
-            value={toSend.reply_to}
             onChange={handleChange}
           />
           {siteKey && (

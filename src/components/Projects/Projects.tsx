@@ -9,7 +9,7 @@ const Projects = () => {
       <div className='projects-list'>
         {projects.map(({ title, image, description, tags, demoUrl, githubUrl }, index) => (
           <div className='project-card' key={index}>
-            <img className='project-image' alt={title} src={image} />
+            <img className='project-image' alt={title} src={image} loading='lazy' />
             <div className='project-text'>
               <h3 className='project-title'>{title}</h3>
               <p className='project-description'>{description}</p>
@@ -22,7 +22,7 @@ const Projects = () => {
               )}
               <div className='project-links'>
                 {demoUrl && (
-                  <a href={demoUrl} className='project-link project-link-primary' target='_blank' rel='noreferrer'>
+                  <a href={demoUrl} className='project-link' target='_blank' rel='noreferrer'>
                     Live demo
                   </a>
                 )}

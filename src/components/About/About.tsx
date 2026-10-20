@@ -23,9 +23,9 @@ const About = () => {
             <p>{description}</p>
           </div>
           <div className='about-links'>
-            <li className='contact-button' onClick={() => scrollToSection(Section.CONTACT)}>
+            <button type='button' className='contact-button' onClick={() => scrollToSection(Section.CONTACT)}>
               Get in touch
-            </li>
+            </button>
             <a href='/DomCampeseResume.pdf' download className='resume-link'>
               <FiDownload size={14} />
               Resume

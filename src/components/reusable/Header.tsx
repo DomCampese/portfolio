@@ -8,7 +8,6 @@ const Header = ({ children }: HeaderProps) => {
   return (
     <div className='section-header'>
       <h2>{children}</h2>
-      <div className='header-accent'></div>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 const KotlinLogo = () => {
   return (
-    <svg viewBox="0 0 8.64 8.633" width="64" height="64">
+    <svg width="64" height="64" viewBox="0 0 8.64 8.633" xmlns="http://www.w3.org/2000/svg" className="skill-card-svg">
       <defs>
         <linearGradient id="kotlin-A" x1="2.039" y1="11.659" x2="9.95" y2="3.748" gradientUnits="userSpaceOnUse">
           <stop offset=".108" stopColor="#c757bc"/>
