@@ -85,14 +85,6 @@ const Contact = () => {
             value={toSend.from_name}
             onChange={handleChange}
           />
-          <label htmlFor='contact-message'>Message</label>
-          <textarea
-            id='contact-message'
-            name='message'
-            placeholder='Your message'
-            value={toSend.message}
-            onChange={handleChange}
-          />
           <label htmlFor='contact-email'>Email</label>
           <input
             type='email'
@@ -101,6 +93,14 @@ const Contact = () => {
             autoComplete='email'
             placeholder='Your email'
             value={toSend.reply_to}
+            onChange={handleChange}
+          />
+          <label htmlFor='contact-message'>Message</label>
+          <textarea
+            id='contact-message'
+            name='message'
+            placeholder='Your message'
+            value={toSend.message}
             onChange={handleChange}
           />
           {siteKey && (

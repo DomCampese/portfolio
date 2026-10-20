@@ -36,7 +36,7 @@ export const skills: SkillItem[] = [
   { Logo: KotlinLogo, name: 'Kotlin' },
   { Logo: SpringBootLogo, name: 'Spring Boot' },
   { Logo: JavaLogo, name: 'Java' },
-  { Logo: CSharpLogo, name: 'C Sharp' },
+  { Logo: CSharpLogo, name: 'C#' },
   { Logo: DotNetLogo, name: '.NET Core' },
   { Logo: CPlusPlusLogo, name: 'C++' },
   { Logo: PythonLogo, name: 'Python 3' },
