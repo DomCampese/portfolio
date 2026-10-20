@@ -3,7 +3,7 @@ import journalerImage from '@images/journaler.png';
 import jumpyballImage from '@images/jumpyball.png';
 import chatioImage from '@images/chatio.png';
 import backroomsImage from '@images/backrooms.jpg';
-import { ReactLogo, TSLogo, HTMLLogo, CSSLogo, DotNetLogo, CSharpLogo, JavaLogo, PythonLogo, FlaskLogo, AngularLogo, KotlinLogo, SpringBootLogo } from '@components/svgs';
+import { ReactLogo, TSLogo, HTMLLogo, CSSLogo, SassLogo, DotNetLogo, CSharpLogo, CPlusPlusLogo, JavaLogo, PythonLogo, DjangoLogo, AngularLogo, KotlinLogo, SpringBootLogo, KubernetesLogo, GitHubActionsLogo, ViteLogo, JestLogo } from '@components/svgs';
 
 export interface SkillItem {
   Logo: FC
@@ -32,13 +32,19 @@ export const skills: SkillItem[] = [
   { Logo: ReactLogo, name: 'React' },
   { Logo: HTMLLogo, name: 'HTML 5' },
   { Logo: CSSLogo, name: 'CSS 3' },
+  { Logo: SassLogo, name: 'Sass' },
   { Logo: KotlinLogo, name: 'Kotlin' },
   { Logo: SpringBootLogo, name: 'Spring Boot' },
+  { Logo: JavaLogo, name: 'Java' },
   { Logo: CSharpLogo, name: 'C Sharp' },
   { Logo: DotNetLogo, name: '.NET Core' },
-  { Logo: JavaLogo, name: 'Java' },
+  { Logo: CPlusPlusLogo, name: 'C++' },
   { Logo: PythonLogo, name: 'Python 3' },
-  { Logo: FlaskLogo, name: 'Flask' },
+  { Logo: DjangoLogo, name: 'Django' },
+  { Logo: KubernetesLogo, name: 'Kubernetes' },
+  { Logo: GitHubActionsLogo, name: 'GitHub Actions' },
+  { Logo: ViteLogo, name: 'Vite' },
+  { Logo: JestLogo, name: 'Jest' },
 ];
 
 export const projects: ProjectItem[] = [
